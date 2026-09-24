@@ -1,0 +1,9 @@
+# VORSCHAU – solange der Entwurf nicht abgenommen ist, bleibt die Seite aus Suchmaschinen draußen.
+User-agent: *
+Disallow: /
+
+# Beim Livegang auf rhconstruction.de ersetzen durch:
+#
+# User-agent: *
+# Allow: /
+# Sitemap: https://rhconstruction.de/sitemap.xml
