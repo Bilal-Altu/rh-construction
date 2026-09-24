@@ -5,22 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Umbau und Sanierung in Bürstadt | rh Construction GmbH</title>
 <meta name="description" content="Umbau und Sanierung in Bürstadt: Bad, Balkon, Büro oder Werkshalle – zwölf Gewerke aus einer Hand, seit 2005. Jetzt Termin vor Ort anfragen.">
-<!-- Vorschau: bleibt aus dem Index, bis Herr Hühn den Entwurf abgenommen hat. Beim Livegang: index, follow -->
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="https://rhconstruction.de/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="rh Construction GmbH">
 <meta property="og:title" content="Umbau und Sanierung in Bürstadt – vom Bad bis zur Werkshalle">
-<meta property="og:description" content="Zwölf Gewerke, ein Ansprechpartner. Seit 2005 für Eigentümer und Unternehmen zwischen Worms, Mannheim und der Bergstraße.">
+<meta property="og:description" content="Umbau und Sanierung in Bürstadt: Bad, Balkon, Büro oder Werkshalle – zwölf Gewerke aus einer Hand, seit 2005. Jetzt Termin vor Ort anfragen.">
 <meta property="og:url" content="https://rhconstruction.de/">
 <meta property="og:image" content="https://rhconstruction.de/bilder/teilen.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="schrift/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
-
+<link rel="stylesheet" href="assets/stil.css?v=34034c12">
+<script src="assets/seite.js?v=4c52c2b3" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -34,8 +32,16 @@
   "telephone": "+49 6206 9090880",
   "email": "info@rhconstruction.de",
   "foundingDate": "2005",
-  "founder": { "@type": "Person", "name": "Rainer Hühn", "jobTitle": "Geschäftsführer", "honorificPrefix": "Dipl.-Ing." },
-  "numberOfEmployees": { "@type": "QuantitativeValue", "value": 25 },
+  "founder": {
+    "@type": "Person",
+    "name": "Rainer Hühn",
+    "jobTitle": "Geschäftsführer",
+    "honorificPrefix": "Dipl.-Ing."
+  },
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 25
+  },
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Die Lächner 11",
@@ -44,557 +50,223 @@
     "addressRegion": "Hessen",
     "addressCountry": "DE"
   },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    "opens": "07:30",
-    "closes": "16:00"
-  }],
-  "areaServed": [
-    { "@type": "City", "name": "Bürstadt" },
-    { "@type": "City", "name": "Lampertheim" },
-    { "@type": "City", "name": "Biblis" },
-    { "@type": "City", "name": "Lorsch" },
-    { "@type": "City", "name": "Bensheim" },
-    { "@type": "City", "name": "Heppenheim" },
-    { "@type": "City", "name": "Viernheim" },
-    { "@type": "City", "name": "Worms" },
-    { "@type": "City", "name": "Mannheim" },
-    { "@type": "AdministrativeArea", "name": "Kreis Bergstraße" },
-    { "@type": "AdministrativeArea", "name": "Metropolregion Rhein-Neckar" }
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "07:30",
+      "closes": "16:00"
+    }
   ],
-  "knowsAbout": ["Generalunternehmer", "Innenausbau", "Trockenbau", "Altbausanierung", "Bodenbeläge", "Fliesenarbeiten", "Maler- und Tapezierarbeiten", "Abdichtungen", "Balkonsanierung", "Sanitär und Heizung", "Pooltechnik", "Gartengestaltung"],
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Bürstadt"
+    },
+    {
+      "@type": "City",
+      "name": "Lampertheim"
+    },
+    {
+      "@type": "City",
+      "name": "Biblis"
+    },
+    {
+      "@type": "City",
+      "name": "Lorsch"
+    },
+    {
+      "@type": "City",
+      "name": "Bensheim"
+    },
+    {
+      "@type": "City",
+      "name": "Heppenheim"
+    },
+    {
+      "@type": "City",
+      "name": "Viernheim"
+    },
+    {
+      "@type": "City",
+      "name": "Worms"
+    },
+    {
+      "@type": "City",
+      "name": "Mannheim"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Kreis Bergstraße"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Metropolregion Rhein-Neckar"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Leistungen",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Planung und Generalunternehmer",
+          "url": "https://rhconstruction.de/leistungen/planung-generalunternehmer/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Innenausbau",
+          "url": "https://rhconstruction.de/leistungen/innenausbau/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Trockenbau",
+          "url": "https://rhconstruction.de/leistungen/trockenbau/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Altbausanierung",
+          "url": "https://rhconstruction.de/leistungen/altbausanierung/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bodenbeläge",
+          "url": "https://rhconstruction.de/leistungen/bodenbelaege/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fliesenarbeiten",
+          "url": "https://rhconstruction.de/leistungen/fliesenarbeiten/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Maler- und Tapezierarbeiten",
+          "url": "https://rhconstruction.de/leistungen/maler-tapezierarbeiten/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Abdichtungen",
+          "url": "https://rhconstruction.de/leistungen/abdichtungen/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Balkonsanierung",
+          "url": "https://rhconstruction.de/leistungen/balkonsanierung/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sanitär und Heizung",
+          "url": "https://rhconstruction.de/leistungen/sanitaer-heizung/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pooltechnik",
+          "url": "https://rhconstruction.de/leistungen/pooltechnik/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Gartengestaltung",
+          "url": "https://rhconstruction.de/leistungen/gartengestaltung/"
+        }
+      }
+    ]
+  },
   "sameAs": [
     "https://www.facebook.com/rhconstruction.de/",
     "https://www.instagram.com/rhconstruction_gmbh/"
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "Übernehmen Sie auch kleine Aufträge?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Ein einzelnes Bad oder ein Balkon bekommt bei uns dieselbe Sorgfalt wie eine ganze Halle." } },
-    { "@type": "Question", "name": "Was kostet ein Umbau oder eine Sanierung?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Das hängt vom Bestand ab. Deshalb nennen wir am Telefon keine Pauschalpreise, sondern kommen vorbei und rechnen dann genau – so aufgeschlüsselt, dass Sie sehen, wo sich sparen lässt." } },
-    { "@type": "Question", "name": "Wie lange dauert es?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Das steht im Terminplan, den Sie mit dem Angebot bekommen. Weil alle Gewerke aus einem Haus kommen, wartet niemand auf den nächsten Handwerker: Fliesenleger, Installateur und Maler sind aufeinander abgestimmt." } },
-    { "@type": "Question", "name": "Wie viel Dreck und Lärm entsteht?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Lärm lässt sich beim Umbau nicht vermeiden, Staub zum größten Teil schon. Wir trennen die Arbeitsbereiche mit Staubwänden ab, decken Böden und Möbel ab und verlassen die Baustelle aufgeräumt." } },
-    { "@type": "Question", "name": "Kann unser Betrieb während des Umbaus weiterlaufen?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Meistens ja. Wir teilen den Umbau in Abschnitte und stimmen Zeiten und Wege mit Ihnen ab, damit Kunden und Mitarbeiter möglichst wenig davon merken." } },
-    { "@type": "Question", "name": "In welchem Gebiet arbeiten Sie?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Von Bürstadt aus vor allem in Lampertheim, Biblis, Lorsch, Worms und Viernheim, an der Bergstraße und in Mannheim, dazu im Rhein-Main-Gebiet. Gewerbliche Projekte betreuen wir auch europaweit." } },
-    { "@type": "Question", "name": "Welche Gewährleistung bekomme ich?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Die gesetzliche: bei Arbeiten an einem Bauwerk fünf Jahre nach BGB, bei Verträgen nach VOB/B vier Jahre. In dieser Zeit sind wir für Mängel an unserer Arbeit Ihr Ansprechpartner." } }
-  ]
-}
-</script>
-
-<style>
-@font-face {
-  font-family: "Schibsted Grotesk";
-  src: url("schrift/schibsted-grotesk.woff2") format("woff2");
-  font-weight: 400 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-:root {
-  --papier: #ffffff;
-  --tinte: #0f151c;
-  --grau: #56606b;          /* 6,4 : 1 auf Weiß */
-  --linie: #e1e5e9;
-  --flaeche: #f3f5f7;
-  --blau: #2583c5;          /* Linie aus dem Logo – nur für Flächen und Großes */
-  --blau-text: #15669e;     /* 5,9 : 1 auf Weiß – für kleine blaue Schrift */
-  --blau-tief: #0b4d8e;     /* dunkelstes Blau im rh */
-  --rand: clamp(16px, 4vw, 48px);
-  --breite: 1320px;
-  --kopf: 64px;
-  --schrift: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
-}
-@media (min-width: 1024px) { :root { --kopf: 76px; } }
-
-*, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--kopf) + 16px); }
-@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
-body {
-  margin: 0;
-  background: var(--papier);
-  color: var(--tinte);
-  font-family: var(--schrift);
-  font-size: 17px;
-  line-height: 1.55;
-  font-feature-settings: "ss01" 0;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-img { display: block; max-width: 100%; height: auto; }
-picture { display: block; }
-a { color: inherit; }
-h1, h2, h3, p, ul, ol, dl, dd, figure, blockquote { margin: 0; padding: 0; }
-ul, ol { list-style: none; }
-button, input, textarea { font: inherit; color: inherit; }
-:focus-visible { outline: 3px solid var(--blau); outline-offset: 3px; border-radius: 2px; }
-.nur-vorlesen {
-  position: absolute !important; width: 1px; height: 1px; overflow: hidden;
-  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
-}
-.springen {
-  position: absolute; left: 12px; top: -60px; z-index: 50;
-  background: var(--tinte); color: #fff; padding: 12px 16px; text-decoration: none;
-}
-.springen:focus { top: 12px; }
-
-.rahmen { width: 100%; max-width: calc(var(--breite) + 2 * var(--rand)); margin: 0 auto; padding: 0 var(--rand); }
-
-/* ---------- Knöpfe ---------- */
-.knopf {
-  display: inline-flex; align-items: center; gap: 12px;
-  min-height: 52px; padding: 0 24px;
-  background: var(--tinte); color: #fff;
-  font-weight: 600; font-size: 16px; letter-spacing: -0.005em;
-  text-decoration: none; border: 0; border-radius: 0; cursor: pointer;
-  transition: background-color .2s ease;
-}
-.knopf:hover { background: var(--blau-tief); }
-.knopf svg { width: 18px; height: 18px; flex: none; }
-.pfeil { display: inline-block; transition: transform .2s ease; }
-a:hover .pfeil, a:focus-visible .pfeil, button:hover .pfeil { transform: translateX(4px); }
-.textlink {
-  font-weight: 600; color: var(--blau-text); text-decoration: none;
-  display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
-  border-bottom: 1px solid transparent;
-}
-.textlink:hover { border-bottom-color: currentColor; }
-
-/* ---------- Kopf ---------- */
-.kopf {
-  position: sticky; top: 0; z-index: 30;
-  background: rgba(255, 255, 255, .97);
-  border-bottom: 1px solid transparent;
-  transition: border-color .2s ease;
-}
-.kopf.ist-gescrollt { border-bottom-color: var(--linie); }
-.kopf__innen { display: flex; align-items: center; height: var(--kopf); gap: 24px; }
-.kopf__marke { display: flex; align-items: center; gap: 14px; text-decoration: none; flex: none; min-height: 44px; }
-.kopf__marke img { width: 88px; height: 44px; }
-.kopf__zusatz { font-size: 13px; line-height: 1.25; color: var(--grau); border-left: 1px solid var(--linie); padding-left: 14px; display: none; }
-.kopf__nav { margin-left: auto; }
-.kopf__nav ul { display: flex; gap: 28px; }
-.kopf__nav a { text-decoration: none; font-size: 15px; font-weight: 500; display: inline-flex; min-height: 44px; align-items: center; border-bottom: 1px solid transparent; }
-.kopf__nav a:hover { border-bottom-color: var(--tinte); }
-.kopf__telefon { display: none; }
-.kopf__menue {
-  margin-left: auto; min-width: 44px; min-height: 44px; padding: 0 4px 0 12px;
-  background: none; border: 0; cursor: pointer; font-weight: 600; font-size: 15px;
-  display: inline-flex; align-items: center; gap: 10px;
-}
-.kopf__menue span { display: block; width: 20px; height: 2px; background: currentColor; position: relative; transition: transform .2s ease; }
-.kopf__menue span::before, .kopf__menue span::after { content: ""; position: absolute; left: 0; width: 20px; height: 2px; background: currentColor; transition: transform .2s ease, top .2s ease; }
-.kopf__menue span::before { top: -6px; }
-.kopf__menue span::after { top: 6px; }
-.menue-offen .kopf__menue span { background: transparent; }
-.menue-offen .kopf__menue span::before { top: 0; transform: rotate(45deg); }
-.menue-offen .kopf__menue span::after { top: 0; transform: rotate(-45deg); }
-
-@media (max-width: 1023px) {
-  .kopf__nav {
-    position: fixed; inset: var(--kopf) 0 0 0; background: var(--papier);
-    padding: 16px var(--rand) 120px; display: none; overflow-y: auto;
-  }
-  .menue-offen .kopf__nav { display: block; }
-  .menue-offen { overflow: hidden; }
-  .kopf__nav ul { flex-direction: column; gap: 0; }
-  .kopf__nav li { border-bottom: 1px solid var(--linie); }
-  .kopf__nav a { font-size: 26px; font-weight: 600; letter-spacing: -0.02em; min-height: 64px; width: 100%; }
-}
-@media (min-width: 480px) { .kopf__zusatz { display: block; } }
-@media (min-width: 1024px) {
-  .kopf__menue { display: none; }
-  .kopf__marke img { width: 104px; height: 52px; }
-  .kopf__telefon {
-    display: inline-flex; align-items: center; gap: 10px; min-height: 44px;
-    font-weight: 600; font-size: 16px; text-decoration: none; font-variant-numeric: tabular-nums;
-    padding-left: 28px; border-left: 1px solid var(--linie);
-  }
-  .kopf__telefon svg { width: 18px; height: 18px; color: var(--blau); }
-  .kopf__telefon:hover { color: var(--blau-tief); }
-}
-
-/* ---------- Titel ---------- */
-.titel { padding-top: clamp(20px, 3.2vh, 40px); }
-.titel__kopf { display: grid; gap: 18px; }
-.titel h1 { font-weight: 700; }
-.titel__ort {
-  display: block; font-size: 15px; font-weight: 600; letter-spacing: 0;
-  color: var(--blau-text); margin-bottom: 10px;
-}
-.titel__satz {
-  display: block;
-  font-size: clamp(42px, 6.6vw, 104px);
-  line-height: .94; letter-spacing: -0.045em;
-  text-wrap: balance;
-}
-.titel__seite p { color: var(--grau); max-width: 36ch; }
-.titel__seite .knopf { display: none; margin-top: 22px; }
-.tueren { display: grid; gap: 12px; margin-top: 24px; }
-.tuer { display: block; text-decoration: none; }
-.tuer__bild { overflow: hidden; background: var(--flaeche); height: 46vw; min-height: 170px; max-height: 300px; }
-.tuer__bild picture { height: 100%; }
-.tuer__bild img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
-.tuer--privat .tuer__bild img { object-position: 50% 58%; }
-.tuer--gewerbe .tuer__bild img { object-position: 50% 62%; }
-.tuer:hover .tuer__bild img { transform: scale(1.025); }
-.tuer__text {
-  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
-  padding: 12px 0 4px; border-bottom: 1px solid var(--linie);
-  min-height: 48px;
-}
-.tuer__text strong { font-weight: 650; font-size: 18px; letter-spacing: -0.01em; }
-.tuer__text span { color: var(--grau); font-size: 15px; }
-.tuer__text .pfeil { margin-left: auto; color: var(--blau-text); font-weight: 600; }
-
-@media (min-width: 768px) {
-  .tueren { grid-template-columns: 5fr 7fr; gap: 16px; }
-  .tuer__bild { height: 38vw; max-height: none; }
-}
-@media (min-width: 1024px) {
-  .titel { display: flex; flex-direction: column; height: calc(100svh - var(--kopf) - 1px); min-height: 600px; max-height: 1000px; padding-bottom: 24px; }
-  .titel__kopf { grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); align-items: end; gap: 48px; }
-  .titel__seite .knopf { display: inline-flex; }
-  .titel__ort { font-size: 16px; margin-bottom: 14px; }
-  .tueren { flex: 1; min-height: 0; margin-top: clamp(20px, 3.4vh, 40px); }
-  .tuer { display: flex; flex-direction: column; min-height: 0; }
-  .tuer__bild { flex: 1; height: auto; min-height: 0; }
-}
-
-/* ---------- Belege ---------- */
-.belege { padding-top: clamp(56px, 9vw, 120px); padding-bottom: clamp(48px, 7vw, 96px); }
-.belege__satz {
-  font-size: clamp(26px, 3.3vw, 46px); line-height: 1.12; letter-spacing: -0.03em;
-  font-weight: 600; max-width: 24em; text-wrap: pretty;
-}
-.belege__satz b { color: var(--blau); font-weight: 700; }
-.belege__satz .leise { color: var(--grau); font-weight: 500; }
-.kunden { margin-top: clamp(36px, 5vw, 64px); padding-top: 20px; border-top: 1px solid var(--linie); display: grid; gap: 12px; }
-.kunden__titel { font-size: 14px; font-weight: 600; color: var(--grau); }
-.kunden ul { display: flex; flex-wrap: wrap; gap: 6px 0; font-size: 17px; font-weight: 500; }
-.kunden li { white-space: nowrap; }
-.kunden li:not(:last-child)::after { content: "/"; color: #b7bfc7; margin: 0 14px; font-weight: 400; }
-@media (min-width: 1024px) { .kunden { grid-template-columns: 3fr 9fr; gap: 48px; } .kunden ul { font-size: 19px; } }
-
-/* ---------- Abschnittsköpfe ---------- */
-.abschnitt { padding: clamp(64px, 9vw, 128px) 0; }
-.abschnitt--linie { border-top: 1px solid var(--linie); }
-h2 { font-size: clamp(32px, 4.2vw, 58px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 650; text-wrap: balance; }
-.vorspann { font-size: 19px; line-height: 1.5; color: var(--grau); max-width: 38ch; margin-top: 18px; }
-@media (min-width: 1024px) { .vorspann { font-size: 20px; } }
-
-/* ---------- Gewerke ---------- */
-.gewerke__kopf { display: grid; gap: 24px; margin-bottom: clamp(28px, 4vw, 48px); }
-.filter { display: flex; flex-wrap: wrap; gap: 0 24px; border-bottom: 1px solid var(--linie); }
-.filter button {
-  background: none; border: 0; padding: 0; cursor: pointer; min-height: 48px;
-  font-weight: 600; font-size: 16px; color: var(--grau);
-  border-bottom: 2px solid transparent; margin-bottom: -1px;
-}
-.filter button:hover { color: var(--tinte); }
-.filter button[aria-pressed="true"] { color: var(--tinte); border-bottom-color: var(--blau); }
-.filter__text { margin-top: 16px; color: var(--grau); max-width: 60ch; }
-.filter__text strong { color: var(--tinte); font-weight: 600; }
-
-.gewerke { display: grid; gap: 40px; }
-.gewerke__liste { counter-reset: gewerk; border-top: 1px solid var(--tinte); }
-.gewerke__liste li { border-bottom: 1px solid var(--linie); transition: opacity .25s ease; }
-.gewerke__liste li.ist-gedimmt { opacity: .32; }
-.gewerke__liste a {
-  display: grid; grid-template-columns: 36px 1fr auto; gap: 4px 12px; align-items: baseline;
-  padding: 18px 0; text-decoration: none; min-height: 44px;
-}
-.gewerke__liste .nr { font-size: 14px; color: var(--grau); font-variant-numeric: tabular-nums; font-weight: 500; }
-.gewerke__liste h3 { font-size: 21px; line-height: 1.2; letter-spacing: -0.02em; font-weight: 620; }
-.gewerke__liste p { grid-column: 2 / 4; color: var(--grau); font-size: 16px; line-height: 1.5; max-width: 58ch; }
-.gewerke__liste .anfragen { grid-column: 3; grid-row: 1; font-size: 14px; font-weight: 600; color: var(--blau-text); white-space: nowrap; }
-.gewerke__liste .anfragen span:first-child { display: none; }
-.gewerke__bild { display: none; }
-.gewerke__fuss { margin-top: 28px; }
-
-@media (min-width: 1024px) {
-  .gewerke__kopf { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); align-items: end; gap: 48px; }
-  .gewerke { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: start; }
-  .gewerke__liste a { grid-template-columns: 48px minmax(0, 15em) 1fr auto; padding: 20px 0; gap: 20px; transition: background-color .2s ease; }
-  .gewerke__liste h3 { font-size: 22px; }
-  .gewerke__liste p { grid-column: auto; font-size: 15.5px; }
-  .gewerke__liste .anfragen { grid-column: auto; grid-row: auto; opacity: 0; transition: opacity .2s ease; }
-  .gewerke__liste .anfragen span:first-child { display: inline; }
-  .gewerke__liste a:hover .anfragen, .gewerke__liste a:focus-visible .anfragen { opacity: 1; }
-  .gewerke__liste a:hover h3 { color: var(--blau-tief); }
-  .gewerke__bild { display: block; position: sticky; top: calc(var(--kopf) + 24px); }
-  .gewerke__bild .rahmen-bild { aspect-ratio: 4 / 3; background: var(--flaeche); overflow: hidden; position: relative; }
-  .gewerke__bild picture { display: none; height: 100%; }
-  .gewerke__bild picture.ist-aktiv { display: block; animation: einblenden .35s ease; }
-  .gewerke__bild img { width: 100%; height: 100%; object-fit: cover; }
-  .gewerke__bild figcaption { margin-top: 12px; font-size: 14px; color: var(--grau); display: flex; justify-content: space-between; gap: 16px; }
-}
-@keyframes einblenden { from { opacity: 0; } to { opacity: 1; } }
-
-/* ---------- Projekte ---------- */
-.projekt__kopf { display: grid; gap: 20px; margin-bottom: clamp(28px, 4vw, 48px); }
-.vergleich { display: grid; gap: 12px; }
-.vergleich figure { position: relative; }
-.vergleich img { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; }
-.vergleich figcaption { display: flex; gap: 10px; align-items: baseline; padding-top: 10px; font-size: 15px; color: var(--grau); }
-.vergleich figcaption strong { color: var(--tinte); font-weight: 650; }
-.marke {
-  position: absolute; left: 0; top: 0; background: var(--papier); color: var(--tinte);
-  font-size: 13px; font-weight: 650; padding: 7px 12px; letter-spacing: .01em;
-}
-.marke--nachher { background: var(--blau-tief); color: #fff; }
-.eckdaten { display: grid; gap: 0; margin-top: clamp(28px, 4vw, 48px); border-top: 1px solid var(--tinte); }
-.eckdaten div { display: grid; gap: 4px; padding: 16px 0; border-bottom: 1px solid var(--linie); }
-.eckdaten dt { font-size: 14px; font-weight: 600; color: var(--grau); }
-.eckdaten dd { font-size: 17px; }
-.innen { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
-.innen img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-.innen figure:first-child { grid-column: 1 / -1; }
-.innen img.hoch { aspect-ratio: 16 / 9; }
-
-.zweites { margin-top: clamp(72px, 10vw, 140px); display: grid; gap: 24px; }
-.zweites__bilder { display: grid; grid-template-columns: 3fr 2fr; gap: 12px; }
-.zweites__bilder picture { height: 100%; }
-.zweites__bilder img { width: 100%; height: 100%; object-fit: cover; }
-.zweites__bilder picture:first-child img { height: auto; aspect-ratio: 4 / 3; }
-.zweites h3 { font-size: clamp(26px, 2.8vw, 38px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 650; text-wrap: balance; }
-.zweites__ort { font-size: 15px; font-weight: 600; color: var(--blau-text); margin-bottom: 10px; }
-.zweites ul { margin-top: 20px; border-top: 1px solid var(--linie); }
-.zweites li { padding: 10px 0; border-bottom: 1px solid var(--linie); font-size: 16px; display: grid; grid-template-columns: 18px 1fr; }
-.zweites li::before { content: ""; width: 7px; height: 7px; background: var(--blau); margin-top: 9px; }
-
-.weitere { margin-top: clamp(72px, 10vw, 140px); }
-.weitere__kopf { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
-.weitere__kopf h3 { font-size: 20px; font-weight: 650; letter-spacing: -0.015em; }
-.weitere__kopf p { font-size: 15px; color: var(--grau); }
-.weitere ul { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.weitere img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
-.weitere figcaption { font-size: 14px; color: var(--grau); padding-top: 8px; }
-
-@media (min-width: 768px) {
-  .vergleich { grid-template-columns: 1fr 1fr; gap: 16px; }
-  .innen { grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
-  .innen figure:first-child { grid-column: auto; }
-  .innen img, .innen img.hoch { aspect-ratio: 4 / 3; }
-  .weitere ul { grid-template-columns: repeat(4, 1fr); gap: 16px; }
-}
-@media (min-width: 1024px) {
-  .projekt__kopf { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); align-items: end; gap: 48px; }
-  .projekt__kopf .vorspann { margin-top: 0; }
-  .eckdaten { grid-template-columns: repeat(3, 1fr); gap: 0 32px; border-top: 0; }
-  .eckdaten div { border-top: 1px solid var(--tinte); border-bottom: 0; padding-top: 14px; }
-  .zweites { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: start; }
-  .zweites__text { padding-top: 4px; }
-}
-
-/* ---------- Ablauf ---------- */
-.ablauf { display: grid; gap: 32px; }
-.ablauf__bild img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-.ablauf__bild figcaption { font-size: 14px; color: var(--grau); padding-top: 10px; max-width: 42ch; }
-.schritte { counter-reset: schritt; margin-top: 28px; border-top: 1px solid var(--tinte); }
-.schritte li { display: grid; grid-template-columns: 44px 1fr; gap: 4px 12px; padding: 20px 0; border-bottom: 1px solid var(--linie); counter-increment: schritt; }
-.schritte li::before {
-  content: counter(schritt); grid-row: 1 / 3;
-  font-size: 15px; font-weight: 650; color: var(--blau-text); font-variant-numeric: tabular-nums;
-  padding-top: 3px;
-}
-.schritte h3 { font-size: 20px; font-weight: 640; letter-spacing: -0.015em; line-height: 1.25; }
-.schritte p { color: var(--grau); font-size: 16px; }
-.ablauf__weiter { margin-top: 28px; }
-@media (min-width: 1024px) {
-  .ablauf { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 64px; align-items: start; }
-  .ablauf__bild { position: sticky; top: calc(var(--kopf) + 24px); }
-  .ablauf__bild img { aspect-ratio: 4 / 5; }
-  .schritte li { grid-template-columns: 64px minmax(0, 14em) 1fr; gap: 24px; padding: 24px 0; }
-  .schritte li::before { grid-row: auto; }
-  .schritte h3 { font-size: 21px; }
-}
-
-/* ---------- Betrieb ---------- */
-.betrieb { background: var(--flaeche); }
-.betrieb__innen { display: grid; gap: 32px; }
-.betrieb__bild img { width: 100%; max-width: 420px; aspect-ratio: 480 / 584; object-fit: cover; background: #e9ecef; }
-.betrieb__bild figcaption { padding-top: 12px; font-size: 15px; color: var(--grau); }
-.betrieb__bild figcaption strong { display: block; color: var(--tinte); font-weight: 650; font-size: 17px; }
-.zitat { margin-top: 28px; }
-.zitat p { font-size: clamp(24px, 2.6vw, 34px); line-height: 1.22; letter-spacing: -0.025em; font-weight: 550; text-wrap: pretty; }
-.zitat p::before { content: "„"; }
-.zitat p::after { content: "“"; }
-.betrieb__text { margin-top: 28px; display: grid; gap: 14px; max-width: 60ch; color: var(--grau); }
-.betrieb__text strong { color: var(--tinte); font-weight: 600; }
-.stellen {
-  margin-top: 40px; padding: 24px 0 0; border-top: 1px solid #cfd5db;
-  display: grid; gap: 14px; align-items: center;
-}
-.stellen h3 { font-size: 21px; font-weight: 650; letter-spacing: -0.015em; }
-.stellen p { color: var(--grau); max-width: 52ch; }
-@media (min-width: 1024px) {
-  .betrieb__innen { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 80px; align-items: start; }
-  .stellen { grid-template-columns: 1fr auto; column-gap: 40px; }
-  .stellen .knopf { grid-row: 1 / 3; grid-column: 2; }
-}
-
-/* ---------- Fragen ---------- */
-.fragen { display: grid; gap: 32px; }
-.fragen__kopf p { margin-top: 18px; color: var(--grau); max-width: 30ch; }
-.fragen dl { border-top: 1px solid var(--tinte); }
-.fragen dl div { padding: 22px 0; border-bottom: 1px solid var(--linie); display: grid; gap: 8px; }
-.fragen dt { font-size: 20px; font-weight: 640; letter-spacing: -0.015em; line-height: 1.3; }
-.fragen dd { color: var(--grau); max-width: 62ch; }
-@media (min-width: 1024px) {
-  .fragen { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 64px; align-items: start; }
-  .fragen__kopf { position: sticky; top: calc(var(--kopf) + 24px); }
-  .fragen dl div { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 32px; padding: 26px 0; }
-}
-
-/* ---------- Anfrage ---------- */
-.anfrage { border-top: 1px solid var(--linie); }
-.anfrage__innen { display: grid; gap: 48px; }
-.formular { margin-top: 32px; display: grid; gap: 20px; }
-.feld { display: grid; gap: 8px; }
-.feld label { font-weight: 600; font-size: 15px; }
-.feld input, .feld textarea {
-  width: 100%; min-height: 52px; padding: 13px 14px;
-  border: 1px solid #b9c1c9; border-radius: 0; background: #fff; font-size: 17px;
-}
-.feld textarea { min-height: 140px; resize: vertical; line-height: 1.5; }
-.feld input:focus, .feld textarea:focus { outline: none; border-color: var(--tinte); box-shadow: 0 0 0 2px var(--tinte) inset; }
-.feld input:focus-visible, .feld textarea:focus-visible { outline: 3px solid var(--blau); outline-offset: 2px; }
-.zwei { display: grid; gap: 20px; }
-@media (min-width: 768px) { .zwei { grid-template-columns: 1fr 1fr; } }
-.haken { display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; font-size: 15px; color: var(--grau); }
-.haken input { width: 22px; height: 22px; margin: 1px 0 0; accent-color: var(--blau-tief); }
-.haken a { color: var(--tinte); }
-.formular__hinweis { font-size: 14px; color: var(--grau); min-height: 1.5em; }
-.formular .knopf { justify-self: start; }
-
-.direkt { display: grid; gap: 28px; align-content: start; }
-.direkt__telefon { display: block; text-decoration: none; }
-.direkt__telefon small { display: block; font-size: 14px; font-weight: 600; color: var(--grau); }
-.direkt__telefon span { font-size: clamp(30px, 3.4vw, 44px); font-weight: 650; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; line-height: 1.15; }
-.direkt__telefon:hover span { color: var(--blau-tief); }
-.direkt__zeilen { display: grid; gap: 0; border-top: 1px solid var(--linie); }
-.direkt__zeilen div { display: grid; grid-template-columns: 96px 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--linie); font-size: 16px; }
-.direkt__zeilen dt { color: var(--grau); font-size: 14px; font-weight: 600; padding-top: 2px; }
-.direkt__zeilen a { text-decoration: none; border-bottom: 1px solid #b9c1c9; }
-.direkt__zeilen a:hover { border-bottom-color: currentColor; }
-.karte { display: block; text-decoration: none; }
-.karte svg { width: 100%; height: auto; display: block; background: var(--flaeche); }
-.karte__unter { display: flex; justify-content: space-between; gap: 12px; padding-top: 10px; font-size: 14px; color: var(--grau); }
-.karte__unter span:last-child { color: var(--blau-text); font-weight: 600; }
-@media (min-width: 1024px) {
-  .anfrage__innen { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 80px; align-items: start; }
-}
-
-/* ---------- Fuß ---------- */
-.fuss { background: var(--tinte); color: #c9d0d7; font-size: 14px; }
-.fuss__innen { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; padding-top: 28px; padding-bottom: 28px; }
-.fuss a { color: #fff; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; }
-.fuss a:hover { text-decoration: underline; }
-.fuss nav ul { display: flex; flex-wrap: wrap; gap: 0 24px; }
-.fuss__recht { margin-left: auto; }
-
-/* ---------- Anrufleiste Handy ---------- */
-.leiste {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 25;
-  display: grid; grid-template-columns: 1fr 1fr;
-  background: var(--papier); border-top: 1px solid var(--linie);
-  padding: 8px var(--rand) calc(8px + env(safe-area-inset-bottom));
-  gap: 8px;
-}
-.leiste a {
-  display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px;
-  text-decoration: none; font-weight: 600; font-size: 16px;
-}
-.leiste a:first-child { background: var(--tinte); color: #fff; }
-.leiste a:last-child { border: 1px solid var(--tinte); }
-.leiste svg { width: 18px; height: 18px; }
-body { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
-@media (min-width: 1024px) { .leiste { display: none; } body { padding-bottom: 0; } }
-
-/* ---------- Handy: kürzer, ohne Inhalt zu verlieren ---------- */
-@media (max-width: 767px) {
-  .abschnitt { padding: 48px 0; }
-  .belege { padding-top: 48px; padding-bottom: 40px; }
-  .kunden { margin-top: 28px; }
-  .gewerke__kopf { margin-bottom: 20px; }
-  .projekt__kopf { margin-bottom: 20px; }
-  .gewerke__liste p { display: none; }
-  .gewerke__liste a { padding: 13px 0; align-items: center; }
-  .gewerke__liste h3 { font-size: 19px; }
-  .vergleich { grid-template-columns: 1fr 1fr; gap: 8px; }
-  .vergleich img { aspect-ratio: 4 / 5; }
-  .vergleich figcaption { display: block; font-size: 13px; line-height: 1.35; }
-  .vergleich figcaption strong { display: block; }
-  .eckdaten div { padding: 12px 0; }
-  .eckdaten dd { font-size: 16px; }
-  .innen { grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 8px; }
-  .innen figure:first-child { grid-column: auto; }
-  .innen img, .innen img.hoch { aspect-ratio: 1 / 1; }
-  .zweites { margin-top: 64px; }
-  .weitere { display: none; }
-  .ablauf__bild { display: none; }
-  .schritte { margin-top: 20px; }
-  .schritte li { padding: 16px 0; }
-  .betrieb__bild { display: grid; grid-template-columns: 124px 1fr; gap: 16px; align-items: end; }
-  .betrieb__bild img { max-width: 124px; }
-  .betrieb__bild figcaption { padding-top: 0; }
-  .zitat { margin-top: 20px; }
-  .fragen dl div { padding: 16px 0; gap: 6px; }
-  .fragen dt { font-size: 18px; }
-  .fragen dd { font-size: 16px; }
-  .formular { margin-top: 24px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { transition: none !important; animation: none !important; }
-}
-</style>
 </head>
 <body>
 <a class="springen" href="#inhalt">Zum Inhalt springen</a>
-
 <header class="kopf" id="kopf">
   <div class="rahmen kopf__innen">
-    <a class="kopf__marke" href="#inhalt" aria-label="rh Construction GmbH – zum Seitenanfang">
-      <picture>
-        <source srcset="bilder/logo.webp" type="image/webp">
-        <img src="bilder/logo.png" width="264" height="132" alt="rh Construction">
-      </picture>
+    <a class="kopf__marke" href="./" aria-label="rh Construction GmbH – zur Startseite">
+      <picture><source srcset="bilder/logo.webp" type="image/webp"><img src="bilder/logo.png" width="264" height="132" alt="rh Construction"></picture>
       <span class="kopf__zusatz">Bauunternehmen<br>in Bürstadt</span>
     </a>
-    <button class="kopf__menue" type="button" aria-expanded="false" aria-controls="navigation">Menü <span aria-hidden="true"></span></button>
-    <nav class="kopf__nav" id="navigation" aria-label="Hauptmenü">
+    <nav class="nav" aria-label="Hauptmenü">
       <ul>
-        <li><a href="#leistungen">Leistungen</a></li>
-        <li><a href="#projekte">Projekte</a></li>
-        <li><a href="#ablauf">Ablauf</a></li>
-        <li><a href="#betrieb">Über uns</a></li>
-        <li><a href="#fragen">Fragen</a></li>
-        <li><a href="#anfrage">Kontakt</a></li>
+        <li class="nav__mega">
+          <button class="nav__auf" type="button" aria-expanded="false" aria-controls="mega">Leistungen <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <div class="mega" id="mega" hidden>
+            <div class="rahmen mega__innen">
+              <div class="mega__wege">
+                <a class="weg" href="fuer-unternehmen/"><strong>Für Unternehmen</strong><span>Büros, Praxen, Gastronomie, Hallen</span></a>
+                <a class="weg" href="fuer-eigentuemer/"><strong>Für Eigentümer</strong><span>Bad, Balkon, Altbau, Garten, Pool</span></a>
+                <a class="textlink" href="leistungen/">Alle Leistungen im Überblick <span class="pfeil" aria-hidden="true">→</span></a>
+              </div>
+              <ol class="mega__liste"><li><a href="leistungen/planung-generalunternehmer/"><span class="nr">01</span>Generalunternehmer</a></li><li><a href="leistungen/innenausbau/"><span class="nr">02</span>Innenausbau</a></li><li><a href="leistungen/trockenbau/"><span class="nr">03</span>Trockenbau</a></li><li><a href="leistungen/altbausanierung/"><span class="nr">04</span>Altbausanierung</a></li><li><a href="leistungen/bodenbelaege/"><span class="nr">05</span>Bodenbeläge</a></li><li><a href="leistungen/fliesenarbeiten/"><span class="nr">06</span>Fliesenarbeiten</a></li><li><a href="leistungen/maler-tapezierarbeiten/"><span class="nr">07</span>Maler- und Tapezierarbeiten</a></li><li><a href="leistungen/abdichtungen/"><span class="nr">08</span>Abdichtungen</a></li><li><a href="leistungen/balkonsanierung/"><span class="nr">09</span>Balkonsanierung</a></li><li><a href="leistungen/sanitaer-heizung/"><span class="nr">10</span>Sanitär und Heizung</a></li><li><a href="leistungen/pooltechnik/"><span class="nr">11</span>Pooltechnik</a></li><li><a href="leistungen/gartengestaltung/"><span class="nr">12</span>Gartengestaltung</a></li></ol>
+            </div>
+          </div>
+        </li>
+        <li><a href="projekte/">Projekte</a></li>
+        <li><a href="ueber-uns/">Über uns</a></li>
+        <li><a href="karriere/">Karriere</a></li>
+        <li><a href="kontakt/">Kontakt</a></li>
       </ul>
     </nav>
-    <a class="kopf__telefon" href="tel:+4962069090880">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>
-      06206 909088-0
-    </a>
+    <a class="kopf__telefon" href="tel:+4962069090880"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>06206 909088-0</a>
+    <button class="kopf__menue" type="button" aria-expanded="false" aria-controls="navigation-mobil">Menü <span aria-hidden="true"></span></button>
   </div>
+  <nav class="nav-mobil" id="navigation-mobil" aria-label="Menü">
+    <ul>
+      <li><a href="fuer-unternehmen/">Für Unternehmen</a></li>
+      <li><a href="fuer-eigentuemer/">Für Eigentümer</a></li>
+      <li><a href="leistungen/">Alle Leistungen</a></li>
+      <li><a href="projekte/">Projekte</a></li>
+      <li><a href="ueber-uns/">Über uns</a></li>
+      <li><a href="karriere/">Karriere</a></li>
+      <li><a href="kontakt/">Kontakt</a></li>
+      <li class="klein"><a href="./">Startseite</a></li>
+    </ul>
+  </nav>
 </header>
-
 <main id="inhalt">
 
-  <!-- 1 · Titel: zwei Türen, eine für Eigentümer, eine für Unternehmen -->
+
   <section class="titel rahmen" aria-labelledby="titel-h">
     <div class="titel__kopf">
       <h1 id="titel-h">
@@ -603,230 +275,146 @@ body { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
       </h1>
       <div class="titel__seite">
         <p>Alle Gewerke aus einer Hand, für Bürstadt und die Region zwischen Worms, Mannheim und der Bergstraße.</p>
-        <a class="knopf" href="#anfrage">Projekt anfragen <span class="pfeil" aria-hidden="true">→</span></a>
+        <a class="knopf" href="kontakt/">Projekt anfragen <span class="pfeil" aria-hidden="true">→</span></a>
       </div>
     </div>
     <div class="tueren">
-      <a class="tuer tuer--privat" href="#leistungen" data-tuer="privat">
-        <div class="tuer__bild">
-          <picture>
-            <source type="image/avif" srcset="bilder/titel-bad-640.avif 640w, bilder/titel-bad-1100.avif 1100w" sizes="(min-width: 768px) 40vw, 100vw">
-            <source type="image/webp" srcset="bilder/titel-bad-640.webp 640w, bilder/titel-bad-1100.webp 1100w" sizes="(min-width: 768px) 40vw, 100vw">
-            <img src="bilder/titel-bad-640.webp" width="640" height="668" alt="Bodengleiche Dusche mit blau gemusterten Zementfliesen und großformatigen Wandplatten" fetchpriority="high">
-          </picture>
-        </div>
+      <a class="tuer tuer--privat" href="fuer-eigentuemer/">
+        <div class="tuer__bild"><picture><source type="image/avif" srcset="bilder/titel-bad-640.avif 640w, bilder/titel-bad-1100.avif 1100w" sizes="(min-width: 768px) 40vw, 100vw"><img src="bilder/titel-bad-640.webp" srcset="bilder/titel-bad-640.webp 640w, bilder/titel-bad-1100.webp 1100w" sizes="(min-width: 768px) 40vw, 100vw" width="640" height="668" alt="Bodengleiche Dusche mit blau gemusterten Zementfliesen und großformatigen Wandplatten" fetchpriority="high"></picture></div>
         <span class="tuer__text"><strong>Für Eigentümer</strong> <span>Bad, Balkon, Altbau, Garten, Pool</span> <b class="pfeil" aria-hidden="true">→</b></span>
       </a>
-      <a class="tuer tuer--gewerbe" href="#leistungen" data-tuer="gewerbe">
-        <div class="tuer__bild">
-          <picture>
-            <source type="image/avif" srcset="bilder/titel-halle-900.avif 900w, bilder/titel-halle-1600.avif 1600w" sizes="(min-width: 768px) 58vw, 100vw">
-            <source type="image/webp" srcset="bilder/titel-halle-900.webp 900w, bilder/titel-halle-1600.webp 1600w" sizes="(min-width: 768px) 58vw, 100vw">
-            <img src="bilder/titel-halle-900.webp" width="900" height="562" alt="Umgebaute Produktionshalle mit beschichtetem Boden, blauer Wand und neu verlegten Leitungen" fetchpriority="high">
-          </picture>
-        </div>
+      <a class="tuer tuer--gewerbe" href="fuer-unternehmen/">
+        <div class="tuer__bild"><picture><source type="image/avif" srcset="bilder/titel-halle-900.avif 900w, bilder/titel-halle-1600.avif 1600w" sizes="(min-width: 768px) 58vw, 100vw"><img src="bilder/titel-halle-900.webp" srcset="bilder/titel-halle-900.webp 900w, bilder/titel-halle-1600.webp 1600w" sizes="(min-width: 768px) 58vw, 100vw" width="900" height="562" alt="Umgebaute Produktionshalle mit beschichtetem Boden, blauer Wand und neu verlegten Leitungen" fetchpriority="high"></picture></div>
         <span class="tuer__text"><strong>Für Unternehmen</strong> <span>Hallen, Büros, Praxen, Gastronomie</span> <b class="pfeil" aria-hidden="true">→</b></span>
       </a>
     </div>
   </section>
 
-  <!-- 2 · Belege -->
   <section class="belege rahmen" aria-labelledby="belege-h">
     <h2 class="belege__satz" id="belege-h">Seit <b>2005</b> am Bau. Über <b>4.000</b> Aufträge, <b>20</b> eigene Leute auf der Baustelle, <b>5</b> im Büro.</h2>
     <div class="kunden">
-      <p class="kunden__titel">Gebaut unter anderem für</p>
-      <ul>
-        <li>Frankfurter Volksbank</li>
-        <li>Raiffeisenbank Ried-Überwald</li>
-        <li>LG Energy Solution</li>
-        <li>Apleona Real Estate</li>
-        <li>Gateway Real Estate</li>
-        <li>Quantum AG</li>
-        <li>Prisman</li>
-        <li>BC Bank Concept</li>
-        <li>St. Thomas e.&#8239;V.</li>
-        <li>Fitseveneleven</li>
-      </ul>
-    </div>
+        <p class="kunden__titel">Gebaut unter anderem für</p>
+        <ul><li>Frankfurter Volksbank</li><li>Raiffeisenbank Ried-Überwald</li><li>LG Energy Solution</li><li>Apleona Real Estate</li><li>Gateway Real Estate</li><li>Quantum AG</li><li>Prisman</li><li>BC Bank Concept</li><li>St. Thomas e. V.</li><li>Fitseveneleven</li></ul>
+      </div>
   </section>
 
-  <!-- 3 · Leistungen -->
   <section class="abschnitt abschnitt--linie" id="leistungen" aria-labelledby="leistungen-h">
     <div class="rahmen">
-      <div class="gewerke__kopf">
-        <div>
-          <h2 id="leistungen-h">Zwölf Gewerke aus Bürstadt, ein Ansprechpartner.</h2>
-        </div>
-        <div>
-          <div class="filter" role="group" aria-label="Leistungen zeigen für">
-            <button type="button" data-filter-knopf="alle" aria-pressed="true">Alle</button>
-            <button type="button" data-filter-knopf="privat" aria-pressed="false">Für Eigentümer</button>
-            <button type="button" data-filter-knopf="gewerbe" aria-pressed="false">Für Unternehmen</button>
-          </div>
-          <p class="filter__text" data-filter-text="alle" aria-live="polite">Sie müssen keine Handwerker zusammensuchen und abstimmen. Wir übernehmen ein einzelnes Gewerk oder den ganzen Umbau – und stehen für das Ergebnis gerade.</p>
-          <p class="filter__text" data-filter-text="privat" hidden><strong>Für Eigentümer:</strong> Sie beauftragen uns einmal, wir kümmern uns um alle Handwerker – vom Fliesenleger bis zum Poolbauer.</p>
-          <p class="filter__text" data-filter-text="gewerbe" hidden><strong>Für Unternehmen:</strong> Wir arbeiten für Banken, Immobilienverwalter und Produktionsbetriebe – als Generalunternehmer oder für einzelne Gewerke.</p>
-        </div>
+      <div class="kopfzeile">
+        <h2 id="leistungen-h">Zwölf Gewerke aus Bürstadt, ein Ansprechpartner.</h2>
+        <p class="vorspann">Sie müssen keine Handwerker zusammensuchen und abstimmen. Wir übernehmen ein einzelnes Gewerk oder den ganzen Umbau.</p>
       </div>
-
+      
       <div class="gewerke">
-        <ol class="gewerke__liste">
-          <li data-fuer="privat gewerbe"><a href="#anfrage" data-gewerk="planung" data-anliegen="Planung und Generalunternehmer">
+        <ol class="gewerke__liste gewerke__liste--kurz">
+          <li data-fuer="privat gewerbe"><a href="leistungen/planung-generalunternehmer/" data-gewerk="planung-generalunternehmer" data-bildtext="Eigener Fuhrpark">
             <span class="nr">01</span><h3>Planung und Generalunternehmer</h3>
             <p>Ein Vertrag statt zehn. Wir planen, stimmen alle Gewerke ab und halten Kosten und Termine im Blick.</p>
-            <span class="anfragen"><span>Anfragen </span><span aria-hidden="true">→</span></span></a></li>
-          <li data-fuer="privat gewerbe"><a href="#anfrage" data-gewerk="innenausbau" data-anliegen="Innenausbau">
+            <span class="mehr"><span>Mehr </span><span aria-hidden="true">→</span></span></a></li>
+          <li data-fuer="privat gewerbe"><a href="leistungen/innenausbau/" data-gewerk="innenausbau" data-bildtext="Empfang und Wartebereich">
             <span class="nr">02</span><h3>Innenausbau</h3>
             <p>Wände, Decken, Böden, Türen und Einbauten aus einer Hand – vom Rohbau bis zur Übergabe.</p>
-            <span class="anfragen"><span>Anfragen </span><span aria-hidden="true">→</span></span></a></li>
-          <li data-fuer="privat gewerbe"><a href="#anfrage" data-gewerk="trockenbau" data-anliegen="Trockenbau">
+            <span class="mehr"><span>Mehr </span><span aria-hidden="true">→</span></span></a></li>
+          <li data-fuer="privat gewerbe"><a href="leistungen/trockenbau/" data-gewerk="trockenbau" data-bildtext="Deckenkuppel in Trockenbau">
             <span class="nr">03</span><h3>Trockenbau</h3>
             <p>Neue Wände, abgehängte Decken und Vorsatzschalen. Schnell gestellt, ohne nasse Baustelle.</p>
-            <span class="anfragen"><span>Anfragen </span><span aria-hidden="true">→</span></span></a></li>
-          <li data-fuer="privat"><a href="#anfrage" data-gewerk="altbau" data-anliegen="Altbausanierung">
+            <span class="mehr"><span>Mehr </span><span aria-hidden="true">→</span></span></a></li>
+          <li data-fuer="privat"><a href="leistungen/altbausanierung/" data-gewerk="altbausanierung" data-bildtext="Innenhof eines sanierten Altbaus">
             <span class="nr">04</span><h3>Altbausanierung</h3>
             <p>Alte Substanz erhalten, Technik und Oberflächen auf heutigen Stand bringen – mit ehrlicher Kostenermittlung vorab.</p>
-            <span class="anfragen"><span>Anfragen </span><span aria-hidden="true">→</span></span></a></li>
-          <li data-fuer="privat gewerbe"><a href="#anfrage" data-gewerk="boden" data-anliegen="Bodenbeläge">
+            <span class="mehr"><span>Mehr </span><span aria-hidden="true">→</span></span></a></li>
+          <li data-fuer="privat gewerbe"><a href="leistungen/bodenbelaege/" data-gewerk="bodenbelaege" data-bildtext="Holzboden in einer Ladenfläche">
             <span class="nr">05</span><h3>Bodenbeläge</h3>
             <p>Parkett, Vinyl, Teppich oder fugenloser Industrieboden – verlegt auf einem Untergrund, den wir vorher prüfen.</p>
-            <span class="anfragen"><span>Anfragen </span><span aria-hidden="true">→</span></span></a></li>
-          <li data-fuer="privat gewerbe"><a href="#anfrage" data-gewerk="fliesen" data-anliegen="Fliesenarbeiten">
+            <span class="mehr"><span>Mehr </span><span aria-hidden="true">→</span></span></a></li>
+          <li data-fuer="privat gewerbe"><a href="leistungen/fliesenarbeiten/" data-gewerk="fliesenarbeiten" data-bildtext="Großformatfliesen im Flur">
             <span class="nr">06</span><h3>Fliesenarbeiten</h3>
             <p>Auch Großformat: sauber ausgerichtet, mit Gefälle und Abdichtung, die dauerhaft halten.</p>
-            <span class="anfragen"><span>Anfragen </span><span aria-hidden="true">→</span></span></a></li>
-          <li data-fuer="privat gewerbe"><a href="#anfrage" data-gewerk="maler" data-anliegen="Maler- und Tapezierarbeiten">
+            <span class="mehr"><span>Mehr </span><span aria-hidden="true">→</span></span></a></li>
+          <li data-fuer="privat gewerbe"><a href="leistungen/maler-tapezierarbeiten/" data-gewerk="maler-tapezierarbeiten" data-bildtext="Empfang einer Arztpraxis">
             <span class="nr">07</span><h3>Maler- und Tapezierarbeiten</h3>
             <p>Gründlich vorbereitete Flächen, abgedeckte Räume, saubere Kanten.</p>
-            <span class="anfragen"><span>Anfragen </span><span aria-hidden="true">→</span></span></a></li>
-          <li data-fuer="privat gewerbe"><a href="#anfrage" data-gewerk="abdichtung" data-anliegen="Abdichtung">
+            <span class="mehr"><span>Mehr </span><span aria-hidden="true">→</span></span></a></li>
+          <li data-fuer="privat gewerbe"><a href="leistungen/abdichtungen/" data-gewerk="abdichtungen" data-bildtext="Bodengleiche Dusche">
             <span class="nr">08</span><h3>Abdichtungen</h3>
-            <p>Feuchteschäden werden teuer, wenn man sie liegen lässt. Wir dichten Keller, Bäder und Flachdächer fachgerecht ab.</p>
-            <span class="anfragen"><span>Anfragen </span><span aria-hidden="true">→</span></span></a></li>
-          <li data-fuer="privat"><a href="#anfrage" data-gewerk="balkon" data-anliegen="Balkonsanierung">
+            <p>Feuchteschäden werden teuer, wenn man sie liegen lässt. Wir suchen zuerst die Ursache und dichten dann fachgerecht ab.</p>
+            <span class="mehr"><span>Mehr </span><span aria-hidden="true">→</span></span></a></li>
+          <li data-fuer="privat"><a href="leistungen/balkonsanierung/" data-gewerk="balkonsanierung" data-bildtext="Sanierter Laubengang">
             <span class="nr">09</span><h3>Balkonsanierung</h3>
             <p>Wieder dicht und begehbar – mit Systemen wie SCHÖNOX BALTERRA, die für Balkone gemacht sind.</p>
-            <span class="anfragen"><span>Anfragen </span><span aria-hidden="true">→</span></span></a></li>
-          <li data-fuer="privat gewerbe"><a href="#anfrage" data-gewerk="sanitaer" data-anliegen="Sanitär und Heizung">
+            <span class="mehr"><span>Mehr </span><span aria-hidden="true">→</span></span></a></li>
+          <li data-fuer="privat gewerbe"><a href="leistungen/sanitaer-heizung/" data-gewerk="sanitaer-heizung" data-bildtext="Bad mit Natursteinwand">
             <span class="nr">10</span><h3>Sanitär und Heizung</h3>
             <p>Geplant zusammen mit Fliesen und Trockenbau. So wird nichts zweimal aufgestemmt.</p>
-            <span class="anfragen"><span>Anfragen </span><span aria-hidden="true">→</span></span></a></li>
-          <li data-fuer="privat"><a href="#anfrage" data-gewerk="pool" data-anliegen="Pooltechnik">
+            <span class="mehr"><span>Mehr </span><span aria-hidden="true">→</span></span></a></li>
+          <li data-fuer="privat"><a href="leistungen/pooltechnik/" data-gewerk="pooltechnik" data-bildtext="Pool mit Beleuchtung">
             <span class="nr">11</span><h3>Pooltechnik</h3>
             <p>Pumpe, Filter, Leitungen und Steuerung übersichtlich eingebaut – damit der Pool auch im fünften Sommer ohne Ärger läuft.</p>
-            <span class="anfragen"><span>Anfragen </span><span aria-hidden="true">→</span></span></a></li>
-          <li data-fuer="privat"><a href="#anfrage" data-gewerk="garten" data-anliegen="Gartengestaltung">
+            <span class="mehr"><span>Mehr </span><span aria-hidden="true">→</span></span></a></li>
+          <li data-fuer="privat"><a href="leistungen/gartengestaltung/" data-gewerk="gartengestaltung" data-bildtext="Weg aus Natursteinplatten">
             <span class="nr">12</span><h3>Gartengestaltung</h3>
             <p>Wege, Terrassen, Pflanzflächen und Entwässerung, die auch in zehn Jahren noch funktionieren.</p>
-            <span class="anfragen"><span>Anfragen </span><span aria-hidden="true">→</span></span></a></li>
+            <span class="mehr"><span>Mehr </span><span aria-hidden="true">→</span></span></a></li>
         </ol>
-
-        <!-- Vorschaubild nur am Desktop. Nicht sichtbare Bilder haben display:none und werden erst beim Zeigen geladen. -->
         <figure class="gewerke__bild" aria-hidden="true">
           <div class="rahmen-bild">
-            <picture data-gewerk="planung" class="ist-aktiv"><source type="image/avif" srcset="bilder/l-planung-1000.avif"><img src="bilder/l-planung-1000.webp" width="1000" height="528" alt="" loading="lazy"></picture>
-            <picture data-gewerk="innenausbau"><source type="image/avif" srcset="bilder/l-innenausbau-1000.avif"><img src="bilder/l-innenausbau-1000.webp" width="1000" height="666" alt="" loading="lazy"></picture>
-            <picture data-gewerk="trockenbau"><source type="image/avif" srcset="bilder/l-trockenbau-1000.avif"><img src="bilder/l-trockenbau-1000.webp" width="1000" height="666" alt="" loading="lazy"></picture>
-            <picture data-gewerk="altbau"><source type="image/avif" srcset="bilder/l-altbau-1000.avif"><img src="bilder/l-altbau-1000.webp" width="1000" height="666" alt="" loading="lazy"></picture>
-            <picture data-gewerk="boden"><source type="image/avif" srcset="bilder/l-boden-1000.avif"><img src="bilder/l-boden-1000.webp" width="1000" height="666" alt="" loading="lazy"></picture>
-            <picture data-gewerk="fliesen"><source type="image/avif" srcset="bilder/l-fliesen-1000.avif"><img src="bilder/l-fliesen-1000.webp" width="1000" height="670" alt="" loading="lazy"></picture>
-            <picture data-gewerk="maler"><source type="image/avif" srcset="bilder/l-maler-1000.avif"><img src="bilder/l-maler-1000.webp" width="1000" height="666" alt="" loading="lazy"></picture>
-            <picture data-gewerk="abdichtung"><source type="image/avif" srcset="bilder/l-abdichtung-567.avif"><img src="bilder/l-abdichtung-567.webp" width="567" height="380" alt="" loading="lazy"></picture>
-            <picture data-gewerk="balkon"><source type="image/avif" srcset="bilder/l-balkon-1000.avif"><img src="bilder/l-balkon-1000.webp" width="1000" height="666" alt="" loading="lazy"></picture>
-            <picture data-gewerk="sanitaer"><source type="image/avif" srcset="bilder/l-sanitaer-567.avif"><img src="bilder/l-sanitaer-567.webp" width="567" height="380" alt="" loading="lazy"></picture>
-            <picture data-gewerk="pool"><source type="image/avif" srcset="bilder/l-pool-1000.avif"><img src="bilder/l-pool-1000.webp" width="1000" height="668" alt="" loading="lazy"></picture>
-            <picture data-gewerk="garten"><source type="image/avif" srcset="bilder/l-garten-1000.avif"><img src="bilder/l-garten-1000.webp" width="1000" height="666" alt="" loading="lazy"></picture>
+            <picture data-gewerk="planung-generalunternehmer" class="ist-aktiv"><source type="image/avif" srcset="bilder/l-planung-600.avif 600w, bilder/l-planung-1000.avif 1000w" sizes="(min-width: 1024px) 40vw, 1px"><img src="bilder/l-planung-600.webp" srcset="bilder/l-planung-600.webp 600w, bilder/l-planung-1000.webp 1000w" sizes="(min-width: 1024px) 40vw, 1px" width="600" height="318" alt="" loading="lazy"></picture>
+            <picture data-gewerk="innenausbau"><source type="image/avif" srcset="bilder/l-innenausbau-600.avif 600w, bilder/l-innenausbau-1000.avif 1000w" sizes="(min-width: 1024px) 40vw, 1px"><img src="bilder/l-innenausbau-600.webp" srcset="bilder/l-innenausbau-600.webp 600w, bilder/l-innenausbau-1000.webp 1000w" sizes="(min-width: 1024px) 40vw, 1px" width="600" height="400" alt="" loading="lazy"></picture>
+            <picture data-gewerk="trockenbau"><source type="image/avif" srcset="bilder/l-trockenbau-600.avif 600w, bilder/l-trockenbau-1000.avif 1000w" sizes="(min-width: 1024px) 40vw, 1px"><img src="bilder/l-trockenbau-600.webp" srcset="bilder/l-trockenbau-600.webp 600w, bilder/l-trockenbau-1000.webp 1000w" sizes="(min-width: 1024px) 40vw, 1px" width="600" height="400" alt="" loading="lazy"></picture>
+            <picture data-gewerk="altbausanierung"><source type="image/avif" srcset="bilder/l-altbau-600.avif 600w, bilder/l-altbau-1000.avif 1000w" sizes="(min-width: 1024px) 40vw, 1px"><img src="bilder/l-altbau-600.webp" srcset="bilder/l-altbau-600.webp 600w, bilder/l-altbau-1000.webp 1000w" sizes="(min-width: 1024px) 40vw, 1px" width="600" height="400" alt="" loading="lazy"></picture>
+            <picture data-gewerk="bodenbelaege"><source type="image/avif" srcset="bilder/l-boden-600.avif 600w, bilder/l-boden-1000.avif 1000w" sizes="(min-width: 1024px) 40vw, 1px"><img src="bilder/l-boden-600.webp" srcset="bilder/l-boden-600.webp 600w, bilder/l-boden-1000.webp 1000w" sizes="(min-width: 1024px) 40vw, 1px" width="600" height="400" alt="" loading="lazy"></picture>
+            <picture data-gewerk="fliesenarbeiten"><source type="image/avif" srcset="bilder/l-fliesen-600.avif 600w, bilder/l-fliesen-1000.avif 1000w" sizes="(min-width: 1024px) 40vw, 1px"><img src="bilder/l-fliesen-600.webp" srcset="bilder/l-fliesen-600.webp 600w, bilder/l-fliesen-1000.webp 1000w" sizes="(min-width: 1024px) 40vw, 1px" width="600" height="402" alt="" loading="lazy"></picture>
+            <picture data-gewerk="maler-tapezierarbeiten"><source type="image/avif" srcset="bilder/l-maler-600.avif 600w, bilder/l-maler-1000.avif 1000w" sizes="(min-width: 1024px) 40vw, 1px"><img src="bilder/l-maler-600.webp" srcset="bilder/l-maler-600.webp 600w, bilder/l-maler-1000.webp 1000w" sizes="(min-width: 1024px) 40vw, 1px" width="600" height="400" alt="" loading="lazy"></picture>
+            <picture data-gewerk="abdichtungen"><source type="image/avif" srcset="bilder/l-abdichtung-567.avif 567w" sizes="(min-width: 1024px) 40vw, 1px"><img src="bilder/l-abdichtung-567.webp" srcset="bilder/l-abdichtung-567.webp 567w" sizes="(min-width: 1024px) 40vw, 1px" width="567" height="380" alt="" loading="lazy"></picture>
+            <picture data-gewerk="balkonsanierung"><source type="image/avif" srcset="bilder/l-balkon-600.avif 600w, bilder/l-balkon-1000.avif 1000w" sizes="(min-width: 1024px) 40vw, 1px"><img src="bilder/l-balkon-600.webp" srcset="bilder/l-balkon-600.webp 600w, bilder/l-balkon-1000.webp 1000w" sizes="(min-width: 1024px) 40vw, 1px" width="600" height="400" alt="" loading="lazy"></picture>
+            <picture data-gewerk="sanitaer-heizung"><source type="image/avif" srcset="bilder/l-sanitaer-567.avif 567w" sizes="(min-width: 1024px) 40vw, 1px"><img src="bilder/l-sanitaer-567.webp" srcset="bilder/l-sanitaer-567.webp 567w" sizes="(min-width: 1024px) 40vw, 1px" width="567" height="380" alt="" loading="lazy"></picture>
+            <picture data-gewerk="pooltechnik"><source type="image/avif" srcset="bilder/l-pool-600.avif 600w, bilder/l-pool-1000.avif 1000w" sizes="(min-width: 1024px) 40vw, 1px"><img src="bilder/l-pool-600.webp" srcset="bilder/l-pool-600.webp 600w, bilder/l-pool-1000.webp 1000w" sizes="(min-width: 1024px) 40vw, 1px" width="600" height="402" alt="" loading="lazy"></picture>
+            <picture data-gewerk="gartengestaltung"><source type="image/avif" srcset="bilder/l-garten-600.avif 600w, bilder/l-garten-1000.avif 1000w" sizes="(min-width: 1024px) 40vw, 1px"><img src="bilder/l-garten-600.webp" srcset="bilder/l-garten-600.webp 600w, bilder/l-garten-1000.webp 1000w" sizes="(min-width: 1024px) 40vw, 1px" width="600" height="400" alt="" loading="lazy"></picture>
           </div>
           <figcaption><span data-bildtext>Eigener Fuhrpark</span><span data-bildnr>01 / 12</span></figcaption>
         </figure>
       </div>
-
-      <p class="gewerke__fuss"><a class="textlink" href="#anfrage">Nicht dabei, was Sie suchen? Fragen Sie trotzdem <span class="pfeil" aria-hidden="true">→</span></a></p>
+      <p class="gewerke__fuss"><a class="textlink" href="leistungen/">Alle Leistungen im Überblick <span class="pfeil" aria-hidden="true">→</span></a></p>
     </div>
   </section>
 
-  <!-- 4 · Projekte -->
   <section class="abschnitt abschnitt--linie" id="projekte" aria-labelledby="projekte-h">
     <div class="rahmen">
-      <div class="projekt__kopf">
+      <div class="kopfzeile">
         <h2 id="projekte-h">Aus einem leeren Getreidelager wurde ein Kulturhaus.</h2>
-        <p class="vorspann">Das KamÜ – Kultur am Übergang – steht gegenüber dem Bahnhof in Bürstadt. Wir haben das Gebäude entkernt und innen wie außen neu aufgebaut.</p>
+        <p class="vorspann">Das KamÜ – Kultur am Übergang – steht gegenüber dem Bahnhof in Bürstadt. Wir haben das Gebäude entkernt und innen wie außen neu aufgebaut. <a class="textlink" href="projekte/kamue-buerstadt/">Zum Projekt <span class="pfeil" aria-hidden="true">→</span></a></p>
       </div>
-
       <div class="vergleich">
         <figure>
-          <picture>
-            <source type="image/avif" srcset="bilder/kamue-vorher-700.avif 700w, bilder/kamue-vorher-1100.avif 1100w" sizes="(min-width: 768px) 50vw, 100vw">
-            <img src="bilder/kamue-vorher-700.webp" srcset="bilder/kamue-vorher-700.webp 700w, bilder/kamue-vorher-1100.webp 1100w" sizes="(min-width: 768px) 50vw, 100vw" width="700" height="556" alt="Das alte Lagergebäude vor dem Umbau: grauer Putz, vernagelte Tore, Graffiti, davor ein Radlader" loading="lazy">
-          </picture>
+          <picture><source type="image/avif" srcset="bilder/kamue-vorher-700.avif 700w, bilder/kamue-vorher-1100.avif 1100w" sizes="(min-width: 768px) 50vw, 50vw"><img src="bilder/kamue-vorher-700.webp" srcset="bilder/kamue-vorher-700.webp 700w, bilder/kamue-vorher-1100.webp 1100w" sizes="(min-width: 768px) 50vw, 50vw" width="700" height="556" alt="Das alte Lagergebäude vor dem Umbau: grauer Putz, vernagelte Tore, Graffiti, davor ein Radlader" loading="lazy"></picture>
           <span class="marke">Vorher</span>
           <figcaption><strong>Industriestraße, Bürstadt</strong> Leerstehendes Lager, Baustelle eingerichtet</figcaption>
         </figure>
         <figure>
-          <picture>
-            <source type="image/avif" srcset="bilder/kamue-nachher-700.avif 700w, bilder/kamue-nachher-1100.avif 1100w" sizes="(min-width: 768px) 50vw, 100vw">
-            <img src="bilder/kamue-nachher-700.webp" srcset="bilder/kamue-nachher-700.webp 700w, bilder/kamue-nachher-1100.webp 1100w" sizes="(min-width: 768px) 50vw, 100vw" width="700" height="554" alt="Dasselbe Gebäude nach dem Umbau: frisch verputzte helle Fassade, grauer Sockel, neue Fenster und Dachrinnen" loading="lazy">
-          </picture>
+          <picture><source type="image/avif" srcset="bilder/kamue-nachher-700.avif 700w, bilder/kamue-nachher-1100.avif 1100w" sizes="(min-width: 768px) 50vw, 50vw"><img src="bilder/kamue-nachher-700.webp" srcset="bilder/kamue-nachher-700.webp 700w, bilder/kamue-nachher-1100.webp 1100w" sizes="(min-width: 768px) 50vw, 50vw" width="700" height="554" alt="Dasselbe Gebäude nach dem Umbau: frisch verputzte helle Fassade, grauer Sockel, neue Fenster und Dachrinnen" loading="lazy"></picture>
           <span class="marke marke--nachher">Nachher</span>
           <figcaption><strong>KamÜ – Kultur am Übergang</strong> Eröffnet im Mai 2023</figcaption>
         </figure>
       </div>
-
-      <dl class="eckdaten">
-        <div><dt>Aufgabe</dt><dd>Komplette Entkernung, neue Fassade mit Putz und Sockel, neue Fenster, Dach und Dachentwässerung, Stahl- und Dachtragwerk saniert.</dd></div>
-        <div><dt>Innen</dt><dd>Fugenloser Industrieboden, offene Stahltreppe, Loft-Fensterelement, Akustiksegel, Klima und Lüftung, Einbauten nach Maß.</dd></div>
-        <div><dt>Ergebnis</dt><dd>Ein Haus mit Seminarräumen, Yogaraum und offenem Saal für Kurse, Ausstellungen und Veranstaltungen.</dd></div>
-      </dl>
-
-      <div class="innen">
-        <figure>
-          <picture><source type="image/avif" srcset="bilder/kamue-treppe-800.avif"><img class="hoch" src="bilder/kamue-treppe-800.webp" width="800" height="498" alt="Neue Stahltreppe mit Riffelblechstufen vor einer Wand in Olivgrün" loading="lazy"></picture>
-        </figure>
-        <figure>
-          <picture><source type="image/avif" srcset="bilder/kamue-fenster-800.avif"><img src="bilder/kamue-fenster-800.webp" width="800" height="498" alt="Raum mit innenliegendem Metallrahmen-Fenster im Loft-Stil und fugenlosem Boden" loading="lazy"></picture>
-        </figure>
-        <figure>
-          <picture><source type="image/avif" srcset="bilder/kamue-dach-800.avif"><img src="bilder/kamue-dach-800.webp" width="800" height="562" alt="Freigelegter, sanierter Holzdachstuhl mit eingebautem Deckenklimagerät" loading="lazy"></picture>
-        </figure>
+      <div style="margin-top: clamp(56px, 8vw, 112px)">
+        <a class="projektkarte projektkarte--klein" href="projekte/prisman-lorsch/">
+        <div class="projektkarte__bilder"><picture><source type="image/avif" srcset="bilder/prisman-linie-800.avif 800w" sizes="(min-width: 1024px) 34vw, 100vw"><img src="bilder/prisman-linie-800.webp" srcset="bilder/prisman-linie-800.webp 800w" sizes="(min-width: 1024px) 34vw, 100vw" width="800" height="500" alt="Halle mit Förderband und neu geführten Leitungen" loading="lazy"></picture></div>
+        <div>
+          <p class="projektkarte__ort">Prisman, Lorsch</p>
+          <h3>Produktionshalle umgebaut – mit lebensmitteltauglichem Boden.</h3>
+          <p>Außen Erdarbeiten und Zufahrten, innen ein neuer Hallenboden, saniertes Tragwerk und neu geordnete Technik – bis zur Inbetriebnahme.</p>
+          <span class="textlink">Zum Projekt <span class="pfeil" aria-hidden="true">→</span></span>
+        </div>
+      </a>
       </div>
-
-      <article class="zweites" aria-labelledby="prisman-h">
-        <div class="zweites__bilder">
-          <picture><source type="image/avif" srcset="bilder/prisman-halle-800.avif 800w, bilder/prisman-halle-1200.avif 1200w" sizes="(min-width: 1024px) 34vw, 60vw"><img src="bilder/prisman-halle-800.webp" srcset="bilder/prisman-halle-800.webp 800w, bilder/prisman-halle-1200.webp 1200w" sizes="(min-width: 1024px) 34vw, 60vw" width="800" height="590" alt="Produktionshalle mit hellem, beschichtetem Boden, Galerie und blauer Stahltreppe" loading="lazy"></picture>
-          <picture><source type="image/avif" srcset="bilder/prisman-linie-800.avif"><img src="bilder/prisman-linie-800.webp" width="800" height="500" alt="Blick in die Halle mit Förderband und neu geführten Leitungen unter der Decke" loading="lazy"></picture>
-        </div>
-        <div class="zweites__text">
-          <p class="zweites__ort">Prisman, Lorsch</p>
-          <h3 id="prisman-h">Produktionshalle umgebaut – mit lebensmitteltauglichem Boden.</h3>
-          <ul>
-            <li>Industrieboden gespachtelt, beschichtet und versiegelt – hygienisch und lebensmitteltauglich</li>
-            <li>Stahl- und Holztragwerk gereinigt, saniert und neu gestrichen</li>
-            <li>Kabeltrassen, Maschinenanschlüsse und Netzwerk neu geordnet</li>
-            <li>LED-Hallenbeleuchtung, dazu Erdarbeiten und Zufahrten außen</li>
-          </ul>
-        </div>
-      </article>
-
-      <div class="weitere">
-        <div class="weitere__kopf">
-          <h3>Weitere Arbeiten</h3>
-          <p>Aufnahmen aus fertiggestellten Projekten</p>
-        </div>
-        <ul>
-          <li><figure><picture><source type="image/avif" srcset="bilder/w-gastro-900.avif"><img src="bilder/w-gastro-900.webp" width="900" height="600" alt="Gastraum mit Pendelleuchten, Sitzbank und Wand in Terrakotta" loading="lazy"></picture><figcaption>Gastronomie</figcaption></figure></li>
-          <li><figure><picture><source type="image/avif" srcset="bilder/w-treppe-900.avif"><img src="bilder/w-treppe-900.webp" width="900" height="592" alt="Treppe mit schwarzen Stufen, Edelstahlgeländer und poliertem Granitboden" loading="lazy"></picture><figcaption>Treppenhaus</figcaption></figure></li>
-          <li><figure><picture><source type="image/avif" srcset="bilder/w-lichthof-700.avif"><img src="bilder/w-lichthof-700.webp" width="700" height="874" alt="Lichthof mit Glasdach über einer sanierten Altbaufassade" loading="lazy"></picture><figcaption>Lichthof im Altbau</figcaption></figure></li>
-          <li><figure><picture><source type="image/avif" srcset="bilder/w-wohnen-900.avif"><img src="bilder/w-wohnen-900.webp" width="900" height="600" alt="Wohnküche mit Ziegelwand, Eichenboden und schwarzer Küchenzeile" loading="lazy"></picture><figcaption>Wohnküche</figcaption></figure></li>
-        </ul>
-      </div>
+      <p class="gewerke__fuss"><a class="textlink" href="projekte/">Alle Projekte <span class="pfeil" aria-hidden="true">→</span></a></p>
     </div>
   </section>
 
-  <!-- 5 · Ablauf -->
   <section class="abschnitt abschnitt--linie" id="ablauf" aria-labelledby="ablauf-h">
     <div class="rahmen ablauf">
-      <figure class="ablauf__bild">
-        <picture><source type="image/avif" srcset="bilder/staubwand-800.avif"><img src="bilder/staubwand-800.webp" width="800" height="534" alt="Staubschutzwand aus Folie trennt einen bewohnten Raum von der Baustelle ab" loading="lazy"></picture>
+      <figure class="ablauf__bild ablauf__bild--handy-weg">
+        <picture><source type="image/avif" srcset="bilder/staubwand-800.avif 800w" sizes="(min-width: 1024px) 40vw, 100vw"><img src="bilder/staubwand-800.webp" srcset="bilder/staubwand-800.webp 800w" sizes="(min-width: 1024px) 40vw, 100vw" width="800" height="534" alt="Staubschutzwand aus Folie trennt einen bewohnten Raum von der Baustelle ab" loading="lazy"></picture>
         <figcaption>Staubwand bei einer Sanierung: Der Rest des Hauses bleibt bewohnbar.</figcaption>
       </figure>
       <div>
@@ -838,246 +426,77 @@ body { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
           <li><h3>Bauen</h3><p>Ein Bauleiter stimmt alle Gewerke ab und überwacht die Termine. Sie haben die ganze Bauzeit dieselbe Nummer.</p></li>
           <li><h3>Abnahme</h3><p>Wir gehen alles gemeinsam mit Ihnen durch. Was nicht passt, bessern wir nach.</p></li>
         </ol>
-        <p class="ablauf__weiter"><a class="knopf" href="#anfrage">Termin vor Ort vereinbaren <span class="pfeil" aria-hidden="true">→</span></a></p>
+        <p class="ablauf__weiter"><a class="knopf" href="kontakt/">Termin vor Ort vereinbaren <span class="pfeil" aria-hidden="true">→</span></a></p>
       </div>
     </div>
   </section>
 
-  <!-- 6 · Betrieb und der Mensch dahinter -->
-  <section class="abschnitt betrieb" id="betrieb" aria-labelledby="betrieb-h">
+  <section class="abschnitt abschnitt--flaeche betrieb" id="betrieb" aria-labelledby="betrieb-h">
     <div class="rahmen betrieb__innen">
       <figure class="betrieb__bild">
-        <picture>
-          <source type="image/avif" srcset="bilder/huehn-480.avif 480w, bilder/huehn-800.avif 800w" sizes="(min-width: 1024px) 420px, 90vw">
-          <img src="bilder/huehn-480.webp" srcset="bilder/huehn-480.webp 480w, bilder/huehn-800.webp 800w" sizes="(min-width: 1024px) 420px, 90vw" width="480" height="584" alt="Rainer Hühn, Geschäftsführer der rh Construction GmbH, mit verschränkten Armen vor heller Wand" loading="lazy">
-        </picture>
+        <picture><source type="image/avif" srcset="bilder/huehn-480.avif 480w, bilder/huehn-800.avif 800w" sizes="(min-width: 1024px) 420px, 124px"><img src="bilder/huehn-480.webp" srcset="bilder/huehn-480.webp 480w, bilder/huehn-800.webp 800w" sizes="(min-width: 1024px) 420px, 124px" width="480" height="584" alt="Rainer Hühn, Geschäftsführer der rh Construction GmbH, mit verschränkten Armen vor heller Wand" loading="lazy"></picture>
         <figcaption><strong>Dipl.-Ing. Rainer Hühn</strong> Bauingenieur, Gründer und Geschäftsführer</figcaption>
       </figure>
       <div>
         <h2 id="betrieb-h">Das rh im Namen steht für Rainer Hühn.</h2>
-        <blockquote class="zitat">
-          <p>Wir bauen schnell, sauber und in bester Qualität. Daran lasse ich mich täglich messen.</p>
-        </blockquote>
+        <blockquote class="zitat"><p>Wir bauen schnell, sauber und in bester Qualität. Daran lasse ich mich täglich messen.</p></blockquote>
         <div class="betrieb__text">
           <p>Gegründet hat er den Betrieb mit dem Anspruch, handwerkliche Qualität und durchdachte Baukonzepte aus einer Hand zu liefern. Aus dem kleinen Handwerksbetrieb ist ein Bauunternehmen mit eigenem Maschinenpark geworden.</p>
-          <p>Er führt jedes Projekt mit technischem Sachverstand und Handschlagqualität – und mit einem offenen Ohr, wenn sich unterwegs etwas ändert.</p>
         </div>
-        <div class="stellen">
-          <h3>Wir stellen ein.</h3>
-          <p>Für Baustelle und Büro suchen wir Verstärkung – Leute aus dem Ausbau genauso wie Bauhelfer. Ein paar Zeilen per E-Mail reichen für den Anfang.</p>
-          <a class="knopf" href="mailto:info@rhconstruction.de?subject=Bewerbung">Bewerbung schicken <span class="pfeil" aria-hidden="true">→</span></a>
+        <div class="knoepfe">
+          <a class="textlink" href="ueber-uns/">Mehr über uns <span class="pfeil" aria-hidden="true">→</span></a>
+          <a class="textlink" href="karriere/">Wir stellen ein <span class="pfeil" aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- 7 · Fragen -->
-  <section class="abschnitt" id="fragen" aria-labelledby="fragen-h">
-    <div class="rahmen fragen">
-      <div class="fragen__kopf">
-        <h2 id="fragen-h">Was Kunden vor dem ersten Termin wissen wollen.</h2>
-        <p>Ihre Frage ist nicht dabei? <a class="textlink" href="#anfrage">Schreiben Sie uns <span class="pfeil" aria-hidden="true">→</span></a></p>
-      </div>
-      <dl>
-        <div><dt>Übernehmen Sie auch kleine Aufträge?</dt><dd>Ja. Ein einzelnes Bad oder ein Balkon bekommt bei uns dieselbe Sorgfalt wie eine ganze Halle.</dd></div>
-        <div><dt>Was kostet ein Umbau oder eine Sanierung?</dt><dd>Das hängt vom Bestand ab. Deshalb nennen wir am Telefon keine Pauschalpreise, sondern kommen vorbei und rechnen dann genau – so aufgeschlüsselt, dass Sie sehen, wo sich sparen lässt.</dd></div>
-        <!-- TODO Bilal: Preisrahmen von Herrn Hühn einholen (z. B. Bad komplett ab …, Balkon je m² …) und hier ergänzen – auch im FAQPage-JSON-LD oben. -->
-        <div><dt>Wie lange dauert es?</dt><dd>Das steht im Terminplan, den Sie mit dem Angebot bekommen. Weil alle Gewerke aus einem Haus kommen, wartet niemand auf den nächsten Handwerker: Fliesenleger, Installateur und Maler sind aufeinander abgestimmt.</dd></div>
-        <!-- TODO Bilal: typische Dauer (Bad, Balkon) von Herrn Hühn bestätigen lassen. -->
-        <div><dt>Wie viel Dreck und Lärm entsteht?</dt><dd>Lärm lässt sich beim Umbau nicht vermeiden, Staub zum größten Teil schon. Wir trennen die Arbeitsbereiche mit Staubwänden ab, decken Böden und Möbel ab und verlassen die Baustelle aufgeräumt.</dd></div>
-        <div><dt>Kann unser Betrieb während des Umbaus weiterlaufen?</dt><dd>Meistens ja. Wir teilen den Umbau in Abschnitte und stimmen Zeiten und Wege mit Ihnen ab, damit Kunden und Mitarbeiter möglichst wenig davon merken.</dd></div>
-        <div><dt>In welchem Gebiet arbeiten Sie?</dt><dd>Von Bürstadt aus vor allem in Lampertheim, Biblis, Lorsch, Worms und Viernheim, an der Bergstraße und in Mannheim, dazu im Rhein-Main-Gebiet. Gewerbliche Projekte betreuen wir auch europaweit.</dd></div>
-        <div><dt>Welche Gewährleistung bekomme ich?</dt><dd>Die gesetzliche: bei Arbeiten an einem Bauwerk fünf Jahre nach BGB, bei Verträgen nach VOB/B vier Jahre. In dieser Zeit sind wir für Mängel an unserer Arbeit Ihr Ansprechpartner.</dd></div>
-      </dl>
-    </div>
-  </section>
-
-  <!-- 8 · Anfrage -->
-  <section class="abschnitt anfrage" id="anfrage" aria-labelledby="anfrage-h">
-    <div class="rahmen anfrage__innen">
+<section class="abschluss" aria-labelledby="abschluss-h">
+    <div class="rahmen abschluss__innen">
       <div>
-        <h2 id="anfrage-h">Erzählen Sie uns, was Sie vorhaben.</h2>
-        <p class="vorspann">Zwei, drei Sätze reichen. Wir rufen Sie zurück und machen einen Termin vor Ort aus.</p>
-        <form class="formular" id="anfrage-formular" novalidate>
-          <div class="zwei">
-            <div class="feld">
-              <label for="f-name">Name</label>
-              <input id="f-name" name="name" type="text" autocomplete="name" required>
-            </div>
-            <div class="feld">
-              <label for="f-telefon">Telefon</label>
-              <input id="f-telefon" name="telefon" type="tel" autocomplete="tel" inputmode="tel" required>
-            </div>
-          </div>
-          <div class="feld">
-            <label for="f-anliegen">Worum geht es?</label>
-            <textarea id="f-anliegen" name="anliegen" rows="5" required placeholder="z. B. Bad im Obergeschoss erneuern, ca. 8 m², in Lampertheim"></textarea>
-          </div>
-          <label class="haken" for="f-einwilligung">
-            <input id="f-einwilligung" name="einwilligung" type="checkbox" required>
-            <span>Ich bin einverstanden, dass die rh Construction GmbH meine Angaben zur Bearbeitung dieser Anfrage verwendet. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</span>
-          </label>
-          <button class="knopf" type="submit">Anfrage senden <span class="pfeil" aria-hidden="true">→</span></button>
-          <p class="formular__hinweis" id="formular-hinweis" aria-live="polite">Beim Senden öffnet sich Ihr E-Mail-Programm mit der fertigen Nachricht.</p>
-        </form>
+        <h2 id="abschluss-h">Erzählen Sie uns, was Sie vorhaben.</h2>
+        <p>Zwei, drei Sätze reichen. Wir rufen Sie zurück und machen einen Termin vor Ort aus.</p>
       </div>
-
-      <div class="direkt">
-        <a class="direkt__telefon" href="tel:+4962069090880"><small>Lieber gleich sprechen?</small><span>06206 909088-0</span></a>
-        <dl class="direkt__zeilen">
-          <div><dt>E-Mail</dt><dd><a href="mailto:info@rhconstruction.de">info@rhconstruction.de</a></dd></div>
-          <div><dt>Büro</dt><dd>Montag bis Freitag, 7:30–16:00 Uhr</dd></div>
-          <div><dt>Adresse</dt><dd>Die Lächner 11, 68642 Bürstadt</dd></div>
-        </dl>
-        <a class="karte" href="https://maps.app.goo.gl/kjDpQEW5po2kp3t38" target="_blank" rel="noopener" aria-label="Firmensitz Die Lächner 11 in Google Maps öffnen (neues Fenster)">
-          <!-- Schematische Karte, aus echten Koordinaten gerechnet: x = (Länge − 8,30) · 1200, y = (49,75 − Breite) · 1851. Keine Kacheln, kein fremder Server. -->
-          <svg viewBox="0 0 480 510" role="img" aria-labelledby="karte-titel">
-            <title id="karte-titel">Einsatzgebiet rund um Bürstadt: Worms, Biblis, Lampertheim, Lorsch, Bensheim, Heppenheim, Viernheim und Mannheim</title>
-            <defs><clipPath id="karte-clip"><rect width="480" height="510"/></clipPath></defs>
-            <g clip-path="url(#karte-clip)">
-              <circle cx="186" cy="198" r="166" fill="none" stroke="#cdd6de" stroke-width="1" stroke-dasharray="3 5"/>
-              <circle cx="186" cy="198" r="332" fill="none" stroke="#cdd6de" stroke-width="1" stroke-dasharray="3 5"/>
-              <path d="M168 537 L174 463 L180 389 L168 333 L138 278 L108 241 L94 213 L102 167 L126 111 L144 56 L168 -10" fill="none" stroke="#b5d4ea" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-              <text x="112" y="370" font-family="Schibsted Grotesk, Arial, sans-serif" font-size="12" fill="#5f7d94" font-style="italic">Rhein</text>
-              <g font-family="Schibsted Grotesk, Arial, sans-serif" font-size="13" fill="#56606b">
-                <circle cx="61" cy="215" r="4" fill="#56606b"/><text x="30" y="238">Worms</text>
-                <circle cx="186" cy="112" r="4" fill="#56606b"/><text x="196" y="116">Biblis</text>
-                <circle cx="220" cy="55" r="4" fill="#56606b"/><text x="230" y="59">Groß-Rohrheim</text>
-                <circle cx="206" cy="283" r="4" fill="#56606b"/><text x="216" y="287">Lampertheim</text>
-                <circle cx="321" cy="178" r="4" fill="#56606b"/><text x="331" y="182">Lorsch</text>
-                <circle cx="387" cy="127" r="4" fill="#56606b"/><text x="397" y="131">Bensheim</text>
-                <circle cx="406" cy="201" r="4" fill="#56606b"/><text x="398" y="222" text-anchor="end">Heppenheim</text>
-                <circle cx="335" cy="390" r="4" fill="#56606b"/><text x="345" y="394">Viernheim</text>
-                <circle cx="199" cy="485" r="4" fill="#56606b"/><text x="209" y="489">Mannheim</text>
-              </g>
-              <rect x="179" y="191" width="14" height="14" fill="#0b4d8e"/>
-              <text x="200" y="203" font-family="Schibsted Grotesk, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f151c">Bürstadt</text>
-            </g>
-          </svg>
-          <span class="karte__unter"><span>Schematische Karte, Ringe im Abstand von 10 km</span><span>Route planen ↗</span></span>
-        </a>
+      <div class="knoepfe">
+        <a class="knopf" href="kontakt/">Anfrage stellen <span class="pfeil" aria-hidden="true">→</span></a>
+        
       </div>
     </div>
   </section>
 </main>
-
 <footer class="fuss">
-  <div class="rahmen fuss__innen">
-    <span>© 2026 rh Construction GmbH</span>
-    <nav aria-label="Rechtliches und Profile">
-      <ul>
-        <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="datenschutz.html">Datenschutz</a></li>
-        <li><a href="https://www.facebook.com/rhconstruction.de/" rel="noopener" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/rhconstruction_gmbh/" rel="noopener" target="_blank">Instagram</a></li>
-      </ul>
-    </nav>
-    <span class="fuss__recht">Amtsgericht Darmstadt, HRB 94555</span>
-  </div>
-</footer>
-
+    <div class="rahmen fuss__oben">
+      <div>
+        <p class="fuss__name">rh Construction GmbH</p>
+        <p class="fuss__spruch">Bauen ohne Limit – seit 2005 in Bürstadt</p>
+        <address>
+          Die Lächner 11, 68642 Bürstadt<br>
+          <a href="tel:+4962069090880">06206 909088-0</a><br>
+          <a href="mailto:info@rhconstruction.de">info@rhconstruction.de</a><br>
+          Mo–Fr 7:30–16:00 Uhr
+        </address>
+      </div>
+      <nav class="fuss__spalte fuss__leistungen" aria-labelledby="fuss-leistungen"><h2 id="fuss-leistungen">Leistungen</h2><ul><li><a href="leistungen/planung-generalunternehmer/">Generalunternehmer</a></li><li><a href="leistungen/innenausbau/">Innenausbau</a></li><li><a href="leistungen/trockenbau/">Trockenbau</a></li><li><a href="leistungen/altbausanierung/">Altbausanierung</a></li><li><a href="leistungen/bodenbelaege/">Bodenbeläge</a></li><li><a href="leistungen/fliesenarbeiten/">Fliesenarbeiten</a></li><li><a href="leistungen/maler-tapezierarbeiten/">Maler- und Tapezierarbeiten</a></li><li><a href="leistungen/abdichtungen/">Abdichtungen</a></li><li><a href="leistungen/balkonsanierung/">Balkonsanierung</a></li><li><a href="leistungen/sanitaer-heizung/">Sanitär und Heizung</a></li><li><a href="leistungen/pooltechnik/">Pooltechnik</a></li><li><a href="leistungen/gartengestaltung/">Gartengestaltung</a></li></ul></nav>
+      <nav class="fuss__spalte" aria-labelledby="fuss-betrieb"><h2 id="fuss-betrieb">rh Construction</h2><ul>
+        <li><a href="fuer-unternehmen/">Für Unternehmen</a></li>
+        <li><a href="fuer-eigentuemer/">Für Eigentümer</a></li>
+        <li><a href="projekte/">Projekte</a></li>
+        <li><a href="ueber-uns/">Über uns</a></li>
+        <li><a href="karriere/">Karriere</a></li>
+        <li><a href="kontakt/">Kontakt</a></li>
+      </ul></nav>
+    </div>
+    <div class="rahmen fuss__unten">
+      <span>© 2026 rh Construction GmbH</span>
+      <a href="impressum/">Impressum</a>
+      <a href="datenschutz/">Datenschutz</a>
+      <a href="https://www.facebook.com/rhconstruction.de/" rel="noopener" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/rhconstruction_gmbh/" rel="noopener" target="_blank">Instagram</a>
+      <span class="fuss__recht">Amtsgericht Darmstadt, HRB 94555</span>
+    </div>
+  </footer>
 <nav class="leiste" aria-label="Schnellkontakt">
   <a href="tel:+4962069090880"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Anrufen</a>
-  <a href="#anfrage">Anfrage</a>
+  <a href="kontakt/">Anfrage</a>
 </nav>
-
-<script>
-(function () {
-  var d = document;
-
-  /* Kopfleiste: Haarlinie erst nach dem Scrollen */
-  var kopf = d.getElementById('kopf');
-  function kopfLinie() { kopf.classList.toggle('ist-gescrollt', window.scrollY > 8); }
-  window.addEventListener('scroll', kopfLinie, { passive: true });
-  kopfLinie();
-
-  /* Menü am Handy */
-  var menue = d.querySelector('.kopf__menue');
-  var nav = d.getElementById('navigation');
-  function menueSetzen(offen) {
-    menue.setAttribute('aria-expanded', String(offen));
-    d.body.classList.toggle('menue-offen', offen);
-  }
-  menue.addEventListener('click', function () { menueSetzen(menue.getAttribute('aria-expanded') !== 'true'); });
-  nav.addEventListener('click', function (e) { if (e.target.closest('a')) menueSetzen(false); });
-  d.addEventListener('keydown', function (e) { if (e.key === 'Escape' && d.body.classList.contains('menue-offen')) { menueSetzen(false); menue.focus(); } });
-
-  /* Leistungen: für Eigentümer / für Unternehmen */
-  var liste = d.querySelector('.gewerke__liste');
-  var knoepfe = Array.prototype.slice.call(d.querySelectorAll('[data-filter-knopf]'));
-  var texte = Array.prototype.slice.call(d.querySelectorAll('[data-filter-text]'));
-  function filtern(wert) {
-    knoepfe.forEach(function (k) { k.setAttribute('aria-pressed', String(k.getAttribute('data-filter-knopf') === wert)); });
-    texte.forEach(function (t) { t.hidden = t.getAttribute('data-filter-text') !== wert; });
-    Array.prototype.forEach.call(liste.children, function (li) {
-      var passt = wert === 'alle' || li.getAttribute('data-fuer').split(' ').indexOf(wert) > -1;
-      li.classList.toggle('ist-gedimmt', !passt);
-    });
-  }
-  knoepfe.forEach(function (k) { k.addEventListener('click', function () { filtern(k.getAttribute('data-filter-knopf')); }); });
-  Array.prototype.forEach.call(d.querySelectorAll('[data-tuer]'), function (a) {
-    a.addEventListener('click', function () { filtern(a.getAttribute('data-tuer')); });
-  });
-
-  /* Vorschaubild neben der Liste (nur Desktop sichtbar) */
-  var bilder = Array.prototype.slice.call(d.querySelectorAll('.gewerke__bild picture'));
-  var bildtext = d.querySelector('[data-bildtext]');
-  var bildnr = d.querySelector('[data-bildnr]');
-  var unterschriften = {
-    planung: 'Eigener Fuhrpark', innenausbau: 'Empfang und Wartebereich', trockenbau: 'Deckenkuppel in Trockenbau',
-    altbau: 'Innenhof eines sanierten Altbaus', boden: 'Holzboden in einer Ladenfläche', fliesen: 'Großformatfliesen im Flur',
-    maler: 'Empfang einer Arztpraxis', abdichtung: 'Bodengleiche Dusche', balkon: 'Sanierter Laubengang',
-    sanitaer: 'Bad mit Natursteinwand', pool: 'Pool mit Technik und Beleuchtung', garten: 'Weg aus Natursteinplatten'
-  };
-  function zeige(name) {
-    bilder.forEach(function (p) { p.classList.toggle('ist-aktiv', p.getAttribute('data-gewerk') === name); });
-    if (unterschriften[name]) bildtext.textContent = unterschriften[name];
-    var nr = bilder.map(function (p) { return p.getAttribute('data-gewerk'); }).indexOf(name) + 1;
-    if (nr) bildnr.textContent = (nr < 10 ? '0' : '') + nr + ' / 12';
-  }
-
-  /* Anliegen im Formular vorbelegen, wenn man über eine Leistung kommt */
-  var feld = d.getElementById('f-anliegen');
-  var vorbelegt = '';
-  function vorbelegen(text) {
-    if (!feld.value.trim() || feld.value === vorbelegt) {
-      vorbelegt = text + ': ';
-      feld.value = vorbelegt;
-    }
-  }
-  Array.prototype.forEach.call(liste.querySelectorAll('a'), function (a) {
-    var name = a.getAttribute('data-gewerk');
-    a.addEventListener('mouseenter', function () { zeige(name); });
-    a.addEventListener('focus', function () { zeige(name); });
-    a.addEventListener('click', function () { vorbelegen(a.getAttribute('data-anliegen')); });
-  });
-
-  /* Formular: ohne Server – baut eine fertige E-Mail */
-  var form = d.getElementById('anfrage-formular');
-  var hinweis = d.getElementById('formular-hinweis');
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var felder = [d.getElementById('f-name'), d.getElementById('f-telefon'), feld, d.getElementById('f-einwilligung')];
-    for (var i = 0; i < felder.length; i++) {
-      var f = felder[i];
-      var leer = f.type === 'checkbox' ? !f.checked : (!f.value.trim() || f.value === vorbelegt);
-      f.setAttribute('aria-invalid', String(leer));
-      if (leer) {
-        hinweis.textContent = f.type === 'checkbox'
-          ? 'Bitte bestätigen Sie noch die Einwilligung.'
-          : 'Bitte füllen Sie noch das Feld „' + d.querySelector('label[for="' + f.id + '"]').textContent + '“ aus.';
-        f.focus();
-        return;
-      }
-    }
-    var name = felder[0].value.trim();
-    var text = 'Name: ' + name + '\nTelefon: ' + felder[1].value.trim() + '\n\n' + feld.value.trim() + '\n';
-    window.location.href = 'mailto:info@rhconstruction.de'
-      + '?subject=' + encodeURIComponent('Anfrage über die Website – ' + name)
-      + '&body=' + encodeURIComponent(text);
-    hinweis.textContent = 'Ihr E-Mail-Programm öffnet sich mit der fertigen Nachricht. Bitte dort noch auf „Senden“ klicken.';
-  });
-})();
-</script>
 </body>
 </html>
