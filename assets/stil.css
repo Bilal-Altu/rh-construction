@@ -77,7 +77,7 @@ a:hover .pfeil, a:focus-visible .pfeil, button:hover .pfeil { transform: transla
   border-bottom: 1px solid transparent;
 }
 .textlink:hover { border-bottom-color: currentColor; }
-@media (max-width: 1023px) { .knopf--wie-leiste { display: none; } } /* dieselbe Aktion hat am Handy die feste Leiste */
+@media (max-width: 1023px) { .knopf--wie-leiste, .knoepfe:has(> .knopf--wie-leiste:only-child) { display: none; } } /* dieselbe Aktion hat am Handy die feste Leiste */
 .knoepfe { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }
 
 /* ---------- Kopf ---------- */
