@@ -1,117 +1,80 @@
-/* rh Construction – gemeinsames Skript für alle Seiten. Jeder Teil prüft selbst, ob es sein Element gibt. */
+/* rh Construction – gemeinsames Skript. Jeder Teil prüft selbst, ob es sein Element gibt. */
 (function () {
   var d = document;
-  var alle = function (sel, wurzel) { return Array.prototype.slice.call((wurzel || d).querySelectorAll(sel)); };
+  var alle = function (sel) { return Array.prototype.slice.call(d.querySelectorAll(sel)); };
+  var ruhig = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* Kopfleiste: Haarlinie erst nach dem Scrollen */
+  /* Kopfleiste: Schatten erst nach dem Scrollen */
   var kopf = d.getElementById('kopf');
-  function kopfLinie() { kopf.classList.toggle('ist-gescrollt', window.scrollY > 8); }
-  window.addEventListener('scroll', kopfLinie, { passive: true });
-  kopfLinie();
+  function schatten() { kopf.classList.toggle('ist-gescrollt', window.scrollY > 40); }
+  window.addEventListener('scroll', schatten, { passive: true });
+  schatten();
 
   /* Menü am Handy */
   var menue = d.querySelector('.kopf__menue');
   var navMobil = d.getElementById('navigation-mobil');
-  function menueSetzen(offen) {
-    menue.setAttribute('aria-expanded', String(offen));
-    d.body.classList.toggle('menue-offen', offen);
-  }
+  function menueSetzen(offen) { menue.setAttribute('aria-expanded', String(offen)); d.body.classList.toggle('menue-offen', offen); }
   if (menue && navMobil) {
     menue.addEventListener('click', function () { menueSetzen(menue.getAttribute('aria-expanded') !== 'true'); });
     navMobil.addEventListener('click', function (e) { if (e.target.closest('a')) menueSetzen(false); });
+    d.addEventListener('keydown', function (e) { if (e.key === 'Escape' && d.body.classList.contains('menue-offen')) { menueSetzen(false); menue.focus(); } });
   }
 
-  /* Leistungsmenü am Desktop: Klick, Tastatur und Überfahren */
-  var auf = d.querySelector('.nav__auf');
-  var mega = d.getElementById('mega');
-  var zuTimer;
-  function megaSetzen(offen) {
-    if (!auf) return;
-    clearTimeout(zuTimer);
-    auf.setAttribute('aria-expanded', String(offen));
-    mega.hidden = !offen;
-    kopf.classList.toggle('mega-offen', offen);
-  }
-  if (auf && mega) {
-    var punkt = auf.closest('li');
-    auf.addEventListener('click', function () { megaSetzen(auf.getAttribute('aria-expanded') !== 'true'); });
-    if (window.matchMedia('(hover: hover)').matches) {
-      punkt.addEventListener('mouseenter', function () { megaSetzen(true); });
-      punkt.addEventListener('mouseleave', function () { zuTimer = setTimeout(function () { megaSetzen(false); }, 180); });
-    }
-    d.addEventListener('click', function (e) { if (!punkt.contains(e.target)) megaSetzen(false); });
-    punkt.addEventListener('focusout', function (e) { if (e.relatedTarget && !punkt.contains(e.relatedTarget)) megaSetzen(false); });
-  }
-
-  d.addEventListener('keydown', function (e) {
-    if (e.key !== 'Escape') return;
-    if (d.body.classList.contains('menue-offen')) { menueSetzen(false); menue.focus(); }
-    if (auf && auf.getAttribute('aria-expanded') === 'true') { megaSetzen(false); auf.focus(); }
+  /* Vorher / nachher */
+  alle('.vorher-nachher').forEach(function (box) {
+    var regler = box.querySelector('input');
+    var setzen = function () { box.style.setProperty('--pos', regler.value + '%'); };
+    regler.addEventListener('input', setzen);
+    setzen();
   });
 
-  /* Leistungsliste: Vorschaubild am Desktop */
-  var liste = d.querySelector('.gewerke__liste');
-  var bilder = alle('.gewerke__bild picture');
-  if (liste && bilder.length) {
-    var bildtext = d.querySelector('[data-bildtext]');
-    var bildnr = d.querySelector('[data-bildnr]');
-    var namen = bilder.map(function (p) { return p.getAttribute('data-gewerk'); });
-    var zeige = function (a) {
-      var name = a.getAttribute('data-gewerk');
-      bilder.forEach(function (p) { p.classList.toggle('ist-aktiv', p.getAttribute('data-gewerk') === name); });
-      if (bildtext) bildtext.textContent = a.getAttribute('data-bildtext') || '';
-      var nr = namen.indexOf(name) + 1;
-      if (bildnr && nr) bildnr.textContent = (nr < 10 ? '0' : '') + nr + ' / ' + namen.length;
-    };
-    alle('a', liste).forEach(function (a) {
-      a.addEventListener('mouseenter', function () { zeige(a); });
-      a.addEventListener('focus', function () { zeige(a); });
-    });
-  }
-
-  /* Leistungsliste: für Eigentümer / für Unternehmen */
-  var knoepfe = alle('[data-filter-knopf]');
-  if (liste && knoepfe.length) {
-    var texte = alle('[data-filter-text]');
-    var filtern = function (wert) {
-      knoepfe.forEach(function (k) { k.setAttribute('aria-pressed', String(k.getAttribute('data-filter-knopf') === wert)); });
-      texte.forEach(function (t) { t.hidden = t.getAttribute('data-filter-text') !== wert; });
-      alle('li', liste).forEach(function (li) {
-        var passt = wert === 'alle' || (li.getAttribute('data-fuer') || '').split(' ').indexOf(wert) > -1;
-        li.classList.toggle('ist-gedimmt', !passt);
+  /* Zahlen zählen hoch, wenn sie ins Bild kommen – wie auf der alten Seite, aber nur einmal und nicht bei reduzierter Bewegung */
+  var zahlen = alle('[data-zahl]');
+  if (zahlen.length && !ruhig && 'IntersectionObserver' in window) {
+    var beobachter = new IntersectionObserver(function (eintraege) {
+      eintraege.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        beobachter.unobserve(e.target);
+        var el = e.target, ziel = +el.getAttribute('data-zahl'), zusatz = el.getAttribute('data-zusatz') || '', start = null;
+        var schritt = function (t) {
+          if (!start) start = t;
+          var anteil = Math.min((t - start) / 1400, 1);
+          var wert = Math.round(ziel * (1 - Math.pow(1 - anteil, 3)));
+          el.textContent = wert.toLocaleString('de-DE') + zusatz;
+          if (anteil < 1) requestAnimationFrame(schritt);
+        };
+        requestAnimationFrame(schritt);
       });
-    };
-    knoepfe.forEach(function (k) { k.addEventListener('click', function () { filtern(k.getAttribute('data-filter-knopf')); }); });
+    }, { threshold: 0.6 });
+    zahlen.forEach(function (el) { beobachter.observe(el); });
   }
 
   /* Anfrageformular: ohne Server – baut eine fertige E-Mail */
   var form = d.getElementById('anfrage-formular');
   if (form) {
-    var feld = d.getElementById('f-anliegen');
+    var feld = d.getElementById('f-nachricht');
     var hinweis = d.getElementById('formular-hinweis');
     var vorbelegt = '';
     var anliegen = new URLSearchParams(window.location.search).get('anliegen');
-    if (anliegen && !feld.value) {
-      vorbelegt = anliegen.slice(0, 80) + ': ';
-      feld.value = vorbelegt;
-    }
+    if (anliegen && !feld.value) { vorbelegt = 'Anfrage: ' + anliegen.slice(0, 80) + '\n\n'; feld.value = vorbelegt; }
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var felder = [d.getElementById('f-name'), d.getElementById('f-telefon'), feld, d.getElementById('f-einwilligung')];
-      for (var i = 0; i < felder.length; i++) {
-        var f = felder[i];
+      var pflicht = [d.getElementById('f-name'), d.getElementById('f-telefon'), feld, d.getElementById('f-einwilligung')];
+      for (var i = 0; i < pflicht.length; i++) {
+        var f = pflicht[i];
         var leer = f.type === 'checkbox' ? !f.checked : (!f.value.trim() || f.value === vorbelegt);
         f.setAttribute('aria-invalid', String(leer));
         if (leer) {
           hinweis.textContent = f.type === 'checkbox'
             ? 'Bitte bestätigen Sie noch die Einwilligung.'
-            : 'Bitte füllen Sie noch das Feld „' + d.querySelector('label[for="' + f.id + '"]').textContent + '“ aus.';
+            : 'Bitte füllen Sie noch das Feld „' + d.querySelector('label[for="' + f.id + '"]').firstChild.textContent.trim() + '“ aus.';
           f.focus();
           return;
         }
       }
-      var name = felder[0].value.trim();
-      var text = 'Name: ' + name + '\nTelefon: ' + felder[1].value.trim() + '\n\n' + feld.value.trim() + '\n';
+      var name = pflicht[0].value.trim();
+      var mail = d.getElementById('f-mail').value.trim();
+      var text = 'Name: ' + name + '\nTelefon: ' + pflicht[1].value.trim() + (mail ? '\nE-Mail: ' + mail : '') + '\n\n' + feld.value.trim() + '\n';
       window.location.href = 'mailto:info@rhconstruction.de'
         + '?subject=' + encodeURIComponent('Anfrage über die Website – ' + name)
         + '&body=' + encodeURIComponent(text);
