@@ -36,8 +36,8 @@ node _quelle/bauen.mjs
 `_quelle/` beginnt mit Unterstrich und wird von GitHub Pages nicht veröffentlicht;
 beim Hochladen zu ALL-INKL ebenfalls weglassen.
 
-Bilder: `bash "C:/Users/bilal/Desktop/rh Construction/werkzeug/bilder-bauen.sh"` aus den Originalen in
-`Desktop\rh Construction\quelle\` (nicht im Repo), AVIF mit WebP als Rückfall. Der Generator liest
+Bilder: `bash "C:/Users/bilal/Desktop/sideTwo Projekte/Website Kunden/rh-construction/_material/werkzeug/bilder-bauen.sh"` aus den Originalen in
+`Desktop\sideTwo Projekte\Website Kunden\rh-construction\_material\quelle\` (nicht im Repo), AVIF mit WebP als Rückfall. Der Generator liest
 Breiten und Maße selbst aus `bilder/`.
 
 Lokal: `.claude/launch.json` → „rhconstruction“ (Port 4750), Adresse
