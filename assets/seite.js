@@ -49,7 +49,40 @@
     zahlen.forEach(function (el) { beobachter.observe(el); });
   }
 
-  /* Anfrageformular: ohne Server – baut eine fertige E-Mail */
+
+  /* Versand an kontakt.php – SideTwo-Kontaktformular-Standard (nie über die Mail-App) */
+  function stSenden(form, betreff, melden) {
+    var daten = new FormData(form);
+    if (betreff) daten.set("betreff", betreff);
+    var knopf = form.querySelector('[type="submit"]');
+    if (knopf) knopf.disabled = true;
+    if (!melden) {
+      var st = form.querySelector(".st-status");
+      if (!st) {
+        st = document.createElement("p");
+        st.className = "st-status";
+        st.setAttribute("role", "status");
+        st.setAttribute("aria-live", "polite");
+        st.style.marginTop = "12px";
+        st.style.fontWeight = "600";
+        form.appendChild(st);
+      }
+      melden = function (ok, text) { st.textContent = text; };
+    }
+    return fetch(form.getAttribute("action") || "kontakt.php", {
+      method: "POST", body: daten, headers: { "X-Requested-With": "fetch" }, credentials: "same-origin"
+    })
+      .then(function (r) { return r.json(); })
+      .catch(function () { return { ok: false, text: "Das Formular konnte gerade nicht gesendet werden. Bitte rufen Sie uns kurz an." }; })
+      .then(function (a) {
+        if (knopf) knopf.disabled = !!a.ok;
+        melden(!!a.ok, a.text);
+        if (a.ok) form.reset();
+        return a;
+      });
+  }
+
+  /* Anfrageformular: Versand per PHP (kontakt.php) */
   var form = d.getElementById('anfrage-formular');
   if (form) {
     var feld = d.getElementById('f-nachricht');
@@ -75,10 +108,8 @@
       var name = pflicht[0].value.trim();
       var mail = d.getElementById('f-mail').value.trim();
       var text = 'Name: ' + name + '\nTelefon: ' + pflicht[1].value.trim() + (mail ? '\nE-Mail: ' + mail : '') + '\n\n' + feld.value.trim() + '\n';
-      window.location.href = 'mailto:info@rhconstruction.de'
-        + '?subject=' + encodeURIComponent('Anfrage über die Website – ' + name)
-        + '&body=' + encodeURIComponent(text);
-      hinweis.textContent = 'Ihr E-Mail-Programm öffnet sich mit der fertigen Nachricht. Bitte dort noch auf „Senden“ klicken.';
+      hinweis.textContent = 'Wird gesendet …';
+      stSenden(form, 'Anfrage über die Website – ' + name, function (ok, t) { hinweis.textContent = t; });
     });
   }
 })();

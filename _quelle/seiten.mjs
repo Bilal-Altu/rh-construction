@@ -24,7 +24,8 @@ function seitenkopf(s, { bild, alt, titel, text, rechts = "" }) {
 }
 
 function formular(s) {
-  return `<form class="formular" id="anfrage-formular" novalidate>
+  return `<form class="formular" id="anfrage-formular" action="${s.u("kontakt.php")}" method="post" novalidate>
+<div class="st-falle" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><label>Bitte leer lassen <input name="webseite" type="text" tabindex="-1" autocomplete="off"></label></div>
           <div class="zwei">
             <div class="feld"><label for="f-name">Vor- und Nachname</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
             <div class="feld"><label for="f-telefon">Telefon</label><input id="f-telefon" name="telefon" type="tel" autocomplete="tel" inputmode="tel" required></div>
@@ -36,7 +37,7 @@ function formular(s) {
             <span>Ich bin einverstanden, dass die rh Construction GmbH meine Angaben zur Bearbeitung meiner Anfrage verwendet. Mehr dazu in der <a href="${s.u("datenschutz/")}">Datenschutzerklärung</a>.</span>
           </label>
           <button class="knopf" type="submit">Nachricht abschicken</button>
-          <p class="formular__hinweis" id="formular-hinweis" aria-live="polite">Beim Abschicken öffnet sich Ihr E-Mail-Programm mit der fertigen Nachricht.</p>
+          <p class="formular__hinweis" id="formular-hinweis" aria-live="polite">Ihre Anfrage geht direkt per E-Mail an uns.</p>
         </form>`;
 }
 
@@ -462,7 +463,7 @@ function datenschutz(s) {
     <p>Die Website liegt bei ALL-INKL.COM – Neue Medien Münnich, Inhaber René Münnich, Hauptstraße 68, 02742 Friedersdorf. Mit dem Anbieter besteht ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO.</p>
     <p>Beim Aufruf einer Seite speichert der Server automatisch, was jeder Browser übermittelt: IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, übertragene Datenmenge, Browser und Betriebssystem sowie die zuvor besuchte Seite. Das ist nötig, um die Website sicher und stabil auszuliefern (Art. 6 Abs. 1 lit. f DSGVO). Die Protokolle werden nur so lange aufbewahrt, wie es dafür erforderlich ist.</p>
     <h2>3. Kontaktformular und E-Mail</h2>
-    <p>Das Formular schickt nichts an einen Server. Beim Abschicken öffnet sich Ihr eigenes E-Mail-Programm mit einer vorbereiteten Nachricht an ${BETRIEB.mail}; erst wenn Sie dort auf „Senden“ klicken, erreichen uns Ihre Angaben per E-Mail.</p>
+    <p>Wenn Sie das Anfrageformular nutzen, werden Ihre Angaben an unseren Webserver übertragen und von dort per E-Mail an ${BETRIEB.mail} weitergeleitet. Wir verwenden sie ausschließlich zur Bearbeitung Ihrer Anfrage (Art. 6 Abs. 1 lit. b DSGVO); ein externer Dienst wird dafür nicht eingesetzt. Zum Schutz vor Missbrauch wird ein nicht umkehrbarer Hashwert Ihrer IP-Adresse höchstens eine Stunde lang gespeichert, um zu viele Anfragen in kurzer Zeit zu begrenzen (Art. 6 Abs. 1 lit. f DSGVO). Beim Absenden wird außerdem ein technisch notwendiges Sitzungs-Cookie gesetzt, das doppelte Absendungen verhindert; es wird beim Schließen des Browsers gelöscht.</p>
     <p>Wir nutzen diese Angaben nur, um Ihre Anfrage zu beantworten und gegebenenfalls ein Angebot zu erstellen (Art. 6 Abs. 1 lit. b DSGVO) sowie auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), die Sie jederzeit für die Zukunft widerrufen können. Kommt kein Auftrag zustande, löschen wir die Nachricht, sobald die Anfrage erledigt ist; sonst gelten die gesetzlichen Aufbewahrungsfristen (sechs bzw. zehn Jahre). Dasselbe gilt, wenn Sie uns anrufen oder direkt eine E-Mail schreiben.</p>
     <h2>4. Links zu anderen Diensten</h2>
     <p>Auf dieser Website sind keine Karten, Videos oder Schriften fremder Anbieter eingebunden. Erst wenn Sie auf den Link zu Google Maps oder auf die Links zu Facebook und Instagram klicken, verlassen Sie diese Website; dann gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>

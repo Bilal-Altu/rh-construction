@@ -19,7 +19,7 @@
 <link rel="preload" href="../schrift/rubik.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../schrift/open-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/stil.css?v=cb1b853e">
-<script src="../assets/seite.js?v=cd3497dd" defer></script>
+<script src="../assets/seite.js?v=0b10a72d" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -93,7 +93,8 @@
   <section class="abschnitt" id="formular" aria-labelledby="formular-h">
     <div class="rahmen" style="max-width: calc(820px + 2 * var(--rand))">
       <div class="abschnitt__kopf"><h2 id="formular-h" class="titel">Formular</h2><p class="vorspann">Schreiben Sie uns kurz, worum es geht. Wir melden uns bei Ihnen.</p></div>
-      <form class="formular" id="anfrage-formular" novalidate>
+      <form class="formular" id="anfrage-formular" action="../kontakt.php" method="post" novalidate>
+<div class="st-falle" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><label>Bitte leer lassen <input name="webseite" type="text" tabindex="-1" autocomplete="off"></label></div>
           <div class="zwei">
             <div class="feld"><label for="f-name">Vor- und Nachname</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
             <div class="feld"><label for="f-telefon">Telefon</label><input id="f-telefon" name="telefon" type="tel" autocomplete="tel" inputmode="tel" required></div>
@@ -105,7 +106,7 @@
             <span>Ich bin einverstanden, dass die rh Construction GmbH meine Angaben zur Bearbeitung meiner Anfrage verwendet. Mehr dazu in der <a href="../datenschutz/">Datenschutzerklärung</a>.</span>
           </label>
           <button class="knopf" type="submit">Nachricht abschicken</button>
-          <p class="formular__hinweis" id="formular-hinweis" aria-live="polite">Beim Abschicken öffnet sich Ihr E-Mail-Programm mit der fertigen Nachricht.</p>
+          <p class="formular__hinweis" id="formular-hinweis" aria-live="polite">Ihre Anfrage geht direkt per E-Mail an uns.</p>
         </form>
     </div>
   </section>
